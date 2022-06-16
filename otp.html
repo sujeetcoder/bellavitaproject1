@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        form{
+            margin: 20% auto auto 40%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">ENTER YOUR OTP</label><br>
+        <input type="text" placeholder="ENTER YPUR OTP HERE" id="otp">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",func)
+
+    function func(){
+        event.preventDefault()
+        if(document.querySelector("#otp").value =="1234"){
+            alert("payment successful")
+        }
+        else{
+            alert("wrong otp")
+        }
+    }
+</script>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<style>
+  a{
+    text-decoration: none;
+    color: black;
+  }
+    /* *****************header********************** */
+    #Icons-div{
+    display: flex;
+  justify-content: space-around;
+        margin-right: 5%;
+    /* height: 100px; */
+    
+}
+#Icons-div>img{
+    width: 50px;
+   margin-right: 5px;
+}
+#cheCkout>h1>img{
+    width: 50px;
+}
+#cheCkout>h1{
+    display: inline-block;
+    width: 100%;
+}
+#menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+header{
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#menu>a:hover{
+    text-decoration: underline #CBD7C2;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    color: #F4F6F5;
+}
+    /* *********************cart********************* */
+    button{
+        margin: 10px;
+    }
+    #apply,#checkout{cursor: pointer;
+            width: 50%;
+            padding: 1%;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(71, 93, 75);
+            color: white;
+            font-size: large;
+            margin-top: 10px;
+
+    }
+    #total{
+        width: 70%;
+        position: sticky;
+        top: 2%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        /* background-color:  rgb(170, 226, 180); */
+        padding: 1%;
+    }
+    h1{
+        width: 100%;
+        box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+        text-align: center;
+    }
+    #container>div{
+        box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+        width: 60%;
+        margin-top: 5%;
+    }
+    #container>div>img{
+            width: 80%;
+        }
+        #Fc{
+            width: 70%;
+            margin: auto;
+            display: flex;
+        }
+
+        /* *******************footer************************** */
+
+        #footer1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+</style>
+</head>
+<body>
+    <header>
+   
+        <div id="menu">
+            <div id="Icons-div">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                    alt="organic"
+                  />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                    alt="essential"
+                  />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                    alt="luxury"
+                  />
+            </div>
+<!-- ////////////////////////////////////////////// -->
+        
+          <a href="shop.html">SHOP ALL </a>
+          <p>|</p>
+          <a href="newarrivals.html">NEW ARRIVALS</a>
+          <p>|</p>
+          <a href="bestsellers.html">BESTSELLERS </a>
+          <p>|</p>
+          <a href="skinCare.html">SKIN CARE </a>
+          <p>|</p>
+          <a href="">HAIR CARE </a>
+          <p>|</p>
+          <a href="">BODY CARE </a>
+          <p>|</p>
+          <a href="ALL PERFUMES.html">PERFUMES </a>
+          <p>|</p>
+          <a href="">COMBOS </a>
+          <p>|</p>
+          <a href="buildabox.html">BUILD A BOX </a>
+        </div>
+        <hr />
+    </header>
+     
+       <div id="cheCkout">
+        <h1>Your Cart
+        <img src="https://static.thenounproject.com/png/1080872-200.png"
+        alt="bag"  />
+        </h1>
+       </div>
+    <div id="Fc">
+        <div id="container">
+    
+        </div>
+        <div id="total">
+            <p>Total items:-</p> <span></span>
+            <h3>Total amount:-</h3>₹ <span></span> <br>
+            <label for=""><h4>Apply Promo</h4></label>
+            <input type="text" placeholder="Enter your promo code"><br>
+            <button id="apply">Apply</button><br>
+            <button id="checkout">checkout</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div id="footer1">
+          <div>
+           <h4>ONLINE PRESENCE</h4>
+           <hr>
+           <h5>Amazon</h5>
+           <h5>Nykaa</h5>
+           <h5>Flipkart</h5>
+           <h5>TataCLiq</h5>
+           <h5>Snapdeal</h5>
+          </div>
+          <div>
+            <h4>INFORMATION</h4>
+            <hr>
+            <h5>Blogs</h5>
+            <h5>Newsroom</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>Privacy Policy</h5>
+            <h5>Refund and Return</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Reward Policy</h5>
+           </div>
+           <div>
+            <h4>SUPPORT</h4>
+            <hr>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+            <h5>Order Tracking</h5>
+            <h5>All Products</h5>
+            <h5>FAQ</h5>
+           </div>
+           <div>
+            <h4>CONTACT US</h4>
+            <hr>
+            <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+            <h5>shop@bellavitaorganic.com</h5>
+            <h5>+91 9311732440</h5>
+            <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+           </div>
+           <div>
+            <h4>OUR NEWS LETTER</h4>
+            <hr>
+            <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+           <p>Plus, you'll be the first to know about our discounts!</p>
+           <input type="mail" placeholder="Enter your Email Address"><br>
+           <button>Sumbmit</button>
+           </div>
+        </div>
+        <div id="footer2">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+          </div>
+          <div id="socialicon">
+            <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+            <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+            <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+            <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+          </div>
+          <div>
+            <p>© 2022, Bella Vita Organic</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+<script>
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+    let total = cartData.length;
+    let totalA =0;
+    document.querySelector("#total>p+span").innerText = cartData.length 
+
+    
+    cartData.forEach(display);
+
+    
+    function display(elem,index){
+      
+      totalA += +elem.price;
+
+        let div = document.createElement("div");
+
+        let img = document.createElement("img");
+        img.setAttribute("src", elem.imageUrl);
+
+        let name = document.createElement("h3");
+        name.innerText = elem.name;
+
+        let price = document.createElement("h4");
+        price.innerText = elem.price;
+
+        let countd = document.createElement("span");
+        countd.innerText = 1
+
+        let button1 = document.createElement("button");
+        button1.innerText = "+";
+
+        let button2 = document.createElement("button")
+        button2.innerText = "-"
+
+        let button3 = document.createElement("button")
+        button3.innerText = "DELETE"
+        button3.style.backgroundColor = "red"
+        button3.addEventListener("click",del)
+
+        function del(){
+            cartData.splice(index,1)
+            localStorage.setItem("cartData",JSON.stringify(cartData))
+            window.location.reload()
+        }
+
+      document.querySelector("#container").append(div);
+
+      div.append(img,name,price,button1,countd,button2,button3)
+      button1.addEventListener("click",inc);
+      button2.addEventListener("click",dec)
+
+        
+      function inc (){
+        countd.innerText++;
+        total++
+        price.innerText = elem.price*countd.innerText;
+        document.querySelector("#total>p+span").innerText =  total
+        totalA += +elem.price
+        document.querySelector("#total>h3+span").innerText =  totalA
+     
+    }
+
+    function dec (){
+        countd.innerText--;
+        
+        total--
+        price.innerText = elem.price*countd.innerText;
+        document.querySelector("#total>p+span").innerText =  total
+        totalA -= +elem.price
+        document.querySelector("#total>h3+span").innerText =  totalA
+        if(countd.innerText<1){
+            del()
+        }
+    }
+    
+    
+  }
+  
+  document.querySelector("#total>h3+span").innerText =  totalA
+  
+  document.querySelector("#checkout").addEventListener("click",checkOut);
+
+  function checkOut (){
+    localStorage.setItem("totalA",totalA);
+    localStorage.setItem("total",total)
+    window.location.href="payment.html"
+  }
+</script>

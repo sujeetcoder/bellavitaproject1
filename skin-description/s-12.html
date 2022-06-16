@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+a{
+          color: black;
+          text-decoration: none;
+        }
+        /* ************************************header***************************************************************************************** */
+#Discount{
+    margin-top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #E5F0DA;
+}
+#shop{
+    width: 10%;
+    padding: 0.2em;
+    background-color: #2B5006;
+    border: none;
+    font-size: medium;
+    color: white;
+    border-radius: 4px;
+}
+h3{
+    text-align: center;
+    position:relative;
+}
+#Icons-div{
+    display: flex;
+  justify-content: space-around;
+margin-top: 10px;
+    height: 100px;
+}
+#signup-icon>img{
+    margin-top: 20px;
+    width: 25px;
+}
+#brand-icon>img{
+    width: 70px;
+   margin: 5px;
+}
+#checkout>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+}
+#menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+header{
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+#menu>a:hover{
+    text-decoration: underline #CBD7C2;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    color: #F4F6F5;
+}
+
+/* *********************************************** */
+        
+        #container{
+            display: flex;
+            width: 70%;
+            margin: auto;
+            margin-top: 5%;
+            /* border: 1px solid red; */
+        }
+        #left{
+            margin: 10px;
+            width: 50%;
+        }
+        #left>img{
+            width: 100%;
+        }
+        #right>div{
+            display: flex;
+        }
+        #right>div>h4+h4{
+            margin-left: 10%;
+            margin-right: 50%;
+            text-decoration: line-through;
+        }
+        #right{
+            font-size: 19px;
+            letter-spacing: 0.6px;
+            line-height: 50px;
+        }
+         #cart{
+            cursor: pointer;
+            width: 100%;
+            padding: 2%;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(71, 93, 75);
+            color: white;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        h6{
+            display: inline-block;
+            background-color:  rgb(203, 222, 206);
+            line-height: 10px;
+        }
+        h6,h6+p{
+            color: rgb(71, 93, 75);
+            /* margin: 3px; */
+            font-size: 14px;
+        }
+        button+h4{
+            color: rgb(71, 93, 75);
+        }
+        h4>img{
+            margin-top: 2px;
+            width: 20px;
+        }
+        .incdec,button+span{
+            
+            
+            width: 2rem;
+            height: 2rem;
+            
+        }
+        button+span{
+            margin: -2px;
+            padding: 6px;
+        }
+
+        /* ***************footer************************ */
+
+        #footer1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+    </style>
+</head>
+<body>
+    <div id="Discount">
+    <h3>
+        Father's Day Sale - Flat 50 % Off on Perfume*
+        <button id="shop">Shop Now</button>
+      </h3>
+    </div>
+      <header>
+          
+            <div id="Icons-div">
+              <div id="signup-icon">
+                <img
+                  src="https://static.thenounproject.com/png/4161545-200.png"
+                  alt="Login Icon"
+                />
+              </div>
+              <div id="brand-icon">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                  alt="organic"
+                />
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                  alt="essential"
+                />
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                  alt="luxury"
+                />
+              </div>
+              <div id="checkout">
+                <img
+                  src="https://static.thenounproject.com/png/1062301-200.png"
+                  alt="search"
+                />
+                <img
+                  src="https://static.thenounproject.com/png/635650-200.png"
+                  alt="wishlist"
+                /><img
+                  src="https://static.thenounproject.com/png/1080872-200.png"
+                  alt="bag"
+                />
+              </div>
+            </div>
+            <div id="menu">
+              <a href="../shop.html">SHOP ALL </a>
+              <p>|</p>
+              <a href="../newarrivals.html">NEW ARRIVALS</a>
+              <p>|</p>
+              <a href="../bestsellers.html">BESTSELLERS </a>
+              <p>|</p>
+              <a href="../skinCare.html">SKIN CARE </a>
+              <p>|</p>
+              <a href="">HAIR CARE </a>
+              <p>|</p>
+              <a href="">BODY CARE </a>
+              <p>|</p>
+              <a href="../ALL PERFUMES.html">PERFUMES </a>
+              <p>|</p>
+              <a href="">COMBOS </a>
+              <p>|</p>
+              <a href="../buildabox.html">BUILD A BOX </a>
+            </div>
+            <hr />
+        </header>
+
+    <!-- ///////////////////////////// -->
+    <div id="container">
+        <div id="left">
+            <img src="">
+        </div>
+        <div id="right">
+            <h2></h2>
+            <h4></h4>
+            <div>
+                <h4>₹ </h4>
+                <h4>₹ </h4>
+                <p></p>
+            </div>
+            <button class="incdec" onclick=dec()>-</button>
+            <span>1</span>
+            <button class="incdec" onclick=inc()>+</button>
+            <button id="cart">ADD TO CART</button>
+                <h4> <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Offer-Icon-V1.png?v=1654771309" alt=""> offers</h4>
+               <h6>FATHER'S DAY - FLAT 50% OFF - PERFUMES</h6> 
+               <p>All Perfumes @ FLAT 50% OFF. No coupon code required. Offer not valid on boxes.</p> 
+               <h6> FATHER'S DAY - FLAT 30% OFF - SKINCARE</h6>
+               <p>All Skincare products @ FLAT 30% OFF. No coupon code required. Offer not valid on boxes.</p> 
+        </div>
+    </div>
+    
+    <footer>
+        <div id="footer1">
+          <div>
+           <h4>ONLINE PRESENCE</h4>
+           <hr>
+           <h5>Amazon</h5>
+           <h5>Nykaa</h5>
+           <h5>Flipkart</h5>
+           <h5>TataCLiq</h5>
+           <h5>Snapdeal</h5>
+          </div>
+          <div>
+            <h4>INFORMATION</h4>
+            <hr>
+            <h5>Blogs</h5>
+            <h5>Newsroom</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>Privacy Policy</h5>
+            <h5>Refund and Return</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Reward Policy</h5>
+           </div>
+           <div>
+            <h4>SUPPORT</h4>
+            <hr>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+            <h5>Order Tracking</h5>
+            <h5>All Products</h5>
+            <h5>FAQ</h5>
+           </div>
+           <div>
+            <h4>CONTACT US</h4>
+            <hr>
+            <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+            <h5>shop@bellavitaorganic.com</h5>
+            <h5>+91 9311732440</h5>
+            <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+           </div>
+           <div>
+            <h4>OUR NEWS LETTER</h4>
+            <hr>
+            <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+           <p>Plus, you'll be the first to know about our discounts!</p>
+           <input type="mail" placeholder="Enter your Email Address"><br>
+           <button>Sumbmit</button>
+           </div>
+        </div>
+        <div id="footer2">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+          </div>
+          <div id="socialicon">
+            <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+            <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+            <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+            <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+          </div>
+          <div>
+            <p>© 2022, Bella Vita Organic</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+<script>
+
+    let descobj = JSON.parse(localStorage.getItem("desciption")) || {};
+   
+
+
+    let price = document.querySelector("#right>div>h4");
+    let img = document.querySelector("#left>img");
+    let desc = document.querySelector("#right>h4");
+    let name = document.querySelector("#right>h2");
+    let stackedprice = document.querySelector("#right>div>h4+h4");
+    let rating = document.querySelector("#right>div>p");
+    display(descobj)
+    function display(elem){
+    
+    img.setAttribute("src",elem.imageUrl);
+
+    desc.innerText = elem.description
+    
+    name.innerText = elem.name
+    
+    price.innerText += elem.price
+    
+    stackedprice.innerText += elem.stackedPrice 
+    
+    rating.innerText += elem.rating
+
+    img.addEventListener("mouseover",mouseOn)
+    function mouseOn(){
+        img.style.cursor = "pointer"
+        img.setAttribute("src",elem.hoverUrl)
+    }
+
+    img.addEventListener("mouseout",mouseoff)
+    function mouseoff(){
+        img.setAttribute("src",elem.imageUrl)
+    }
+}
+
+
+let countd = document.querySelector("button+span")
+
+function inc (){
+        countd.innerText++;
+        price.innerText = descobj.price*countd.innerText;
+    }
+
+    function dec (){
+      if(countd.innerText<1){
+            alert("Can Not Go Below 0")
+        }
+        else{
+          countd.innerText--;
+        price.innerText = descobj.price*countd.innerText
+        }
+       ;
+        
+    }
+
+    let cart = JSON.parse(localStorage.getItem("cartData")) || [];
+    document.querySelector("#cart").addEventListener("click",function(){
+        if(check()){
+            alert("ALREADY ADDED TO CART")
+        }else{
+            cart.push(descobj)
+        localStorage.setItem("cartData",JSON.stringify(cart))
+        window.location.href="../cart.html"
+        }
+        
+    })
+
+    function check(){
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].productID == descobj.productID){
+                return true;
+            }
+        }
+        return false;
+    } 
+
+</script>
