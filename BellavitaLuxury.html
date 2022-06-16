@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bella-vita-luxury</title>
+    <style>
+        *{
+          margin:0px;
+          padding:0px;  
+        }
+  a{
+          color: black;
+          text-decoration: none;
+        }
+        /* ************************************header***************************************************************************************** */
+#Discount{
+    margin-top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #E5F0DA;
+    font-size:18px ;
+}
+#shop{
+    width:10%;
+    padding:0px;
+    margin: 0px;
+    border-radius:4px ;
+}
+h3{
+    text-align: center;
+    position:relative;
+}
+#Icons-div{
+    display: flex;
+  justify-content: space-around;
+margin-top: 10px;
+    height: 100px;
+}
+#signup-icon>img{
+    margin-top: 20px;
+    width: 25px;
+}
+#brand-icon>a>img{
+    width: 70px;
+   margin: 5px;
+}
+#checkout>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+}
+#whatsapp{
+    position: fixed;
+    top: 680px;
+    left: 1600px;
+    height: 55px;
+    width: 56px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+header{
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#menu>a:hover{
+    text-decoration: underline #CBD7C2;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    color: #F4F6F5;
+}
+
+       #luxury{
+    
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display:flex;
+            justify-content: center;
+        }
+        #luxury>img{
+            border-radius: 20px;
+        }
+        #sellers{
+    text-align: center;
+    color: #475d;
+    position: relative;
+}
+#sellers:before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #475D4B;
+  position: absolute;
+  right:650px;
+  top:50%;
+  z-index:-2;
+}
+#sellers:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #475D4B;
+    position: absolute;
+    left:650px;
+    top:50%;
+    z-index:-2;
+  }
+        #container {
+            width: 85%;
+            margin:auto;
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 3%;
+        }
+        #Perfumes{
+            margin: auto;
+            width:81%;
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            column-gap:10px ;
+        }
+        
+        #container>div{
+            display: flex;
+            flex-direction: column;
+            margin: 10% auto;
+            box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 10px;
+            justify-content: flex-end;
+        }
+       
+        #Perfumes>img{
+            width:85%;
+            height:100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;    
+        }
+        #Perfumes>img:hover{
+            -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}  
+        #rounded>button,#rounded>button+button{
+         width: 15%;
+         border-radius: 80%;  
+         margin: 1px; 
+          border: 1px solid black;
+          background-color: white;
+
+        }
+        #rounded{
+          justify-content: space-evenly;
+          margin: auto;
+          margin-bottom: 5%;
+          display: flex;
+            width:70px;
+        }
+        
+        #container>div>img{
+            width: 100%;
+        }
+        #container>div>div{
+            width: 100%;
+            display: flex;
+        }
+        #container>div>div>p{
+            margin-left: 10%;
+            margin-right: 30%;
+            text-decoration: line-through;
+        }
+        button{
+            cursor: pointer;
+            width: 100%;
+            padding: 3%;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(71, 93, 75);
+            color: white;
+            font-size: large;
+            margin-top: 10px;
+        }
+      #video{
+        display:flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      #footer1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+
+        </style>
+        </head>
+        <body>
+          <a href="https://chat.whatsapp.com/DXPebvfGUwH0QQNd8foVfn" target="_blank"><img id="whatsapp" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/336/assets/whatsapp.svg?v=107532592768653809461655125466" alt="image" ></a>
+            <header>
+                <div id="Discount">
+                  <h3>
+                    Father's Day Sale - Flat 50 % Off on Perfume*
+                    <button id="shop">Shop Now</button>
+                  </h3>
+                </div>
+                <div>
+                  <div id="Icons-div">
+                    <div id="signup-icon">
+                      <img
+                        src="https://static.thenounproject.com/png/4161545-200.png"
+                        alt="Login Icon"
+                      />
+                    </div>
+                    <div id="brand-icon">
+                      <a href="index.html" target="_self">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                          alt="organic"
+                        /></a>
+                        <a href="BraveEssentials.html">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                            alt="essential"
+                          /></a>
+                          <a href="BellavitaLuxury.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                              alt="luxury"
+                            />
+                          </a>
+                    </div>
+                    <div id="checkout">
+                      <img
+                        src="https://static.thenounproject.com/png/1062301-200.png"
+                        alt="search"
+                      />
+                      <img
+                        src="https://static.thenounproject.com/png/635650-200.png"
+                        alt="wishlist"
+                      /><img
+                        src="https://static.thenounproject.com/png/1080872-200.png"
+                        alt="bag"
+                      />
+                    </div>
+                  </div>
+                  <div id="menu">
+                    <a href="#" target="_self"><p>SHOP ALL</p></a>
+          <P>|</P>
+          <a href="newarrivals.html" target="_self"><p>NEW ARRIVALS</p></a>
+          <P>|</P>
+          <a href="bestsellers.html" target="_self"><p>BESTSELLERS</p></a>
+          <P>|</P>
+          <a href="skinCare.html" target="_self"><p>SKIN CARE</p></a><P>|</P>
+          <a href="haircare.html" target="_self"><p>HAIR CARE</p></a>
+          <P>|</P>
+          <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
+          <P>|</P>
+          <a href="ALLPERFUMES.html" target="_self"><p>PERFUMES</p></a>
+          <P>|</P>
+          <a href="combo.html" target="_self"><p>COMBOS</p></a>
+          <P>|</P>
+          <a href="buildabox.html" target="_self"> <p>BUILD A BOX</p></a>
+                  </div>
+                  <hr />
+                </div>
+              </header>
+        
+<div id="luxury">
+    <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/category_banner_unisex_1500x.jpg?v=1652784212">
+</div>
+<div id="sellers"><h3>BESTSELLERS</h3></div>
+<div id="container">
+
+</div>
+<div id="rounded">
+  <button id="#button1"></button>
+  <button id="#button2"></button>
+</div>
+<div id="Perfumes">
+
+</div>
+<div id="video">
+    <iframe
+     width="1700"
+      height="900"
+       src="https://www.youtube.com/embed/_dv17JD5Tk0?list=TLGGRw0ZXheoVgoxNTA2MjAyMg" 
+       title="YouTube video player" 
+       frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</div>
+
+<footer>
+    <div id="footer1">
+      <div>
+       <h4>ONLINE PRESENCE</h4>
+       <hr>
+       <h5>Amazon</h5>
+       <h5>Nykaa</h5>
+       <h5>Flipkart</h5>
+       <h5>TataCLiq</h5>
+       <h5>Snapdeal</h5>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <hr>
+        <h5>Blogs</h5>
+        <h5>Newsroom</h5>
+        <h5>Terms & Conditions</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Refund and Return</h5>
+        <h5>Shipping Policy</h5>
+        <h5>Reward Policy</h5>
+       </div>
+       <div>
+        <h4>SUPPORT</h4>
+        <hr>
+        <h5>About Us</h5>
+        <h5>Contact Us</h5>
+        <h5>Order Tracking</h5>
+        <h5>All Products</h5>
+        <h5>FAQ</h5>
+       </div>
+       <div>
+        <h4>CONTACT US</h4>
+        <hr>
+        <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+        <h5>shop@bellavitaorganic.com</h5>
+        <h5>+91 9311732440</h5>
+        <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+       </div>
+       <div>
+        <h4>OUR NEWS LETTER</h4>
+        <hr>
+        <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+       <p>Plus, you'll be the first to know about our discounts!</p>
+       <input type="mail" placeholder="Enter your Email Address"><br>
+       <button>Sumbmit</button>
+       </div>
+    </div>
+    <div id="footer2">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+      </div>
+      <div id="socialicon">
+        <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+        <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+        <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+        <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+        <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+      </div>
+      <div>
+        <p>© 2022, Bella Vita Organic</p>
+      </div>
+    </div>
+  </footer>
+
+        </body>
+        </html>
+<script>
+let productData=[{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Fresh-01_e2d901e0-bcf7-482c-8140-3888f8a6f08c_700x.jpg?v=1652422196",
+name:"FRESH UNISEX PERFUME, 100ml",
+description:"EAU DE TOILETTE",
+price:" 449",
+stackedPrice:"₹ 899",
+rating:"4.8 ★",
+productID:"L-01",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Fresh-02.jpg?v=1655146432"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/WhiteOUD-01_5eb2f95c-36ef-4c3b-a450-657c6dc6f420_700x.jpg?v=1652422287",
+name:"WHITE OUD UNISEX, 100ml",
+description:"Eau De Parfum",
+price:"499",
+stackedPrice:"₹ 999",
+rating:"4.7 ★",
+productID:"L-02",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/WhiteOUD-02_360x.jpg?v=1652422288"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/IMPACT-01_700x.jpg?v=1652422894",
+name:"IMPACT MAN PERFUME, 100ml",
+description:"Eau De Cologne",
+price:" 449",
+stackedPrice:"₹ 899",
+rating:"4.7 ★",
+productID:"L-03",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/IMPACT-02_360x.jpg?v=1652422896"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glam-01_700x.jpg?v=1652422496",
+name:"GLAM WOMAN PERFUME, 100ml",
+description:"Eau De Parfum",
+price:"₹ 499",
+stackedPrice:"₹999",
+rating:"4.5 ★",
+productID:"L-04",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glam-02_360x.jpg?v=1652422501",},];
+
+let productData01=[{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Dominus-01_700x.jpg?v=1652422970",
+name:"DOMINUS MAN PERFUME, 100ml",
+description:"Eau De Parfum",
+price:" 449",
+stackedPrice:"₹ 899",
+rating:"4.7 ★",
+productID:"L-05",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Dominus-02_360x.jpg?v=1652422972"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOWOMAN-01_2ea1ef20-601f-41a5-a43c-1fd3d5f0ad1b_700x.jpg?v=1652422049",
+name:"CEO WOMAN PERFUME, 100ml",
+description:"Eau De Parfum",
+price:"499",
+stackedPrice:"₹ 899",
+rating:"4.7 ★",
+productID:"L-06",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CEOWOMAN-02_360x.jpg?v=1652422051"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/SkaiAquatic-01_700x.jpg?v=1652422766",
+name:"SKAI AQUATIC UNISEX PERFUME, 100ml",
+description:"Eau De Cologne",
+price:" 349",
+stackedPrice:"₹ 699",
+rating:"4.9 ★",
+productID:"L-07",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/SkaiAquatic-02_360x.jpg?v=1652422770"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Honey-01_700x.jpg?v=1652423027",
+name:"HONEY OUD UNISEX PERFUME, 100ml",
+description:"Parfum",
+price:"₹ 499",
+stackedPrice:"₹999",
+rating:"5.0 ★",
+productID:"L-04",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Honey-02_360x.jpg?v=1652423029",},];
+
+let perfumesData=[{  imageUrl:"https://cdn.shopify.com/s/files/1/0561/9256/5292/files/category_tile_men_680x680.jpg?v=1652265181",
+
+},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0561/9256/5292/files/category_tile_women_680x680.jpg?v=1652265252",
+
+},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0561/9256/5292/files/category_tile_little_luxuries_680x680.jpg?v=1652266061",
+
+},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0561/9256/5292/files/category_tile_unisex_680x680.jpg?v=1652266096",
+
+},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0561/9256/5292/files/category_tile_giftsets_680x680.jpg?v=1652266120",
+
+
+},];
+let cart = JSON.parse(localStorage.getItem("cartData")) || [];
+productData.forEach(display1);
+function display1(elem){
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.setAttribute("src",elem.imageUrl);
+    let name = document.createElement("h5");
+    name.innerText = elem.name
+    let a = document.createElement("a");
+    a.setAttribute("href",elem.anchor)
+    a.append(name)
+    let description = document.createElement("p");
+    description.innerText = elem.description
+    let prdiv = document.createElement("div");
+    let price = document.createElement("h4");
+    let rupee = document.createElement("h4");
+    rupee.innerText = "₹"
+    price.innerText = elem.price;
+    let stackedprice = document.createElement("p");
+    stackedprice.innerText = elem.stackedPrice;
+    let rating= document.createElement("h3");
+    rating.innerText = elem.rating;
+    let cartButton = document.createElement("button");
+    cartButton.innerText = "ADD TO CART";
+    document.querySelector("#container").append(div)
+    div.append(img,a,description,prdiv,cartButton)
+    prdiv.append(rupee,price,stackedprice,rating)
+    cartButton.addEventListener("click",function(){
+        if(check()){
+            alert("ALREADY ADDED TO CART")
+        }else{
+            cart.push(elem)
+        localStorage.setItem("cartData",JSON.stringify(cart))
+        window.location.href="cart.html"
+        }
+    })
+    function check(){
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].productID == elem.productID){
+                return true;
+            }
+        }
+        return false;
+    }
+    div.addEventListener("mouseover",mouseOn)
+    function mouseOn(){
+        div.style.cursor = "pointer"
+        img.setAttribute("src",elem.hoverUrl)
+    }
+    div.addEventListener("mouseout",mouseoff)
+    function mouseoff(){
+        img.setAttribute("src",elem.imageUrl)
+    }
+
+    img.addEventListener("click",redirect)
+    name.addEventListener("click",redirect)
+    function redirect(){
+        localStorage.setItem("desciption",JSON.stringify(elem))
+        window.location.href = "skin-description/s-12.html"
+    }
+}
+perfumesData.forEach(display2);
+
+function display2(elem){
+ let image= document.createElement("img");   
+ image.setAttribute("src",elem.imageUrl);
+ 
+
+    image.addEventListener("click",perfume)
+
+    function perfume(){
+        window.location.href = "ALLPERFUMES.html"
+    }
+document.querySelector("#Perfumes").append(image)
+
+}
+
+document.querySelector("#rounded>button").addEventListener("click",change1)
+document.querySelector("#rounded>button+button").addEventListener("click",change2)
+
+function change1(){
+  document.querySelector("#rounded>button+button").style.backgroundColor = "white"
+  document.querySelector("#rounded>button").style.backgroundColor = "black"
+    document.querySelector("#container").innerHTML = "";
+    productData.forEach(display1);
+}
+
+function change2(){
+  document.querySelector("#rounded>button+button").style.backgroundColor = "black"
+  document.querySelector("#rounded>button").style.backgroundColor = "white"
+    document.querySelector("#container").innerHTML = "";
+    productData01.forEach(display1);
+}
+
+
+</script>

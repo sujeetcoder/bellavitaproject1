@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brave-Essentials</title>
+    <style>
+
+*{
+          margin:0px;
+          padding:0px;  
+        }
+  a{
+          color: black;
+          text-decoration: none;
+        }
+#Discount{
+    margin-top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #E5F0DA;
+    font-size:18px ;
+}
+#shop{
+    width:10%;
+    padding:0px;
+    margin: 0px;
+    border-radius:4px ;
+}
+h3{
+    text-align: center;
+    position:relative;
+}
+#Icons-div{
+    display: flex;
+  justify-content: space-around;
+margin-top: 10px;
+    height: 100px;
+}
+#signup-icon>img{
+    margin-top: 20px;
+    width: 25px;
+}
+#brand-icon>a>img{
+    width: 70px;
+   margin: 5px;
+}
+#checkout>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+}
+#menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+header{
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#menu>a:hover{
+    text-decoration: underline #CBD7C2;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    color: #F4F6F5;
+}
+
+        #brave{
+            width: 80%;
+            display:flex;
+            justify-content: center;
+            margin:auto;
+            margin-top: 20px;
+          margin-bottom: 40px;
+        }
+        #brave>img{
+         border-radius: 20px;
+        }
+        #sellers{
+    text-align: center;
+    color: #475d;
+    position: relative;
+ 
+}
+#sellers:before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #475D4B;
+  position: absolute;
+  right:650px;
+  top:50%;
+  z-index:-2;
+}
+#sellers:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #475D4B;
+    position: absolute;
+    left:650px;
+    top:50%;
+    z-index:-2;
+  }
+
+        #rounded1>button,#rounded>button+button{
+         width: 15%;
+         border-radius: 80%;  
+         margin: 1px; 
+          border: 1px solid black;
+          background-color: white;
+
+        }
+        #rounded1{
+          justify-content: space-evenly;
+          margin: auto;
+          margin-bottom: 5%;
+          display: flex;
+            width:70px;
+        }
+
+        #rounded2>button,#rounded2>button+button{
+         width: 15%;
+         border-radius: 80%;  
+         margin: 1px; 
+          border: 1px solid black;
+          background-color: white;
+
+        }
+        #rounded2{
+          justify-content: space-evenly;
+          margin: auto;
+          margin-bottom: 5%;
+          display: flex;
+            width:70px;
+        }
+        #whatsapp{
+    position: fixed;
+    top: 680px;
+    left: 1600px;
+    height: 55px;
+    width: 56px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+        #container1,#container2,#container3{
+            width: 75%;
+            margin: auto;
+            margin-top: 2%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 3%;
+        }
+        #container1>div,#container2>div,#container3>div{
+            display: flex;
+            flex-direction: column;
+            margin: 10% auto;
+            box-shadow: rgba(73, 73, 73, 0.15) 1.95px 1.95px 2.6px;
+            border-radius: 10px;
+            justify-content: flex-end;
+        }
+        #container1>div>img,#container2>div>img,#container3>div>img{
+            width: 100%;
+        }
+        #container1>div>div, #container2>div>div,#container3>div>div{
+
+            width: 100%;
+            display: flex;
+        }
+        #container1>div>div>p,#container2>div>div>p,#container3>div>div>p{
+            margin-left: 10%;
+            margin-right: 30%;
+            text-decoration: line-through;
+        }
+        button{
+            cursor: pointer;
+            width: 100%;
+            padding: 3%;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(71, 93, 75);
+            color: white;
+            font-size: large;
+            margin-top: 10px;
+        }
+
+        #footer1{
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+        </style>
+        </head>
+        <body>
+          <a href="https://chat.whatsapp.com/DXPebvfGUwH0QQNd8foVfn" target="_blank"><img id="whatsapp" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/336/assets/whatsapp.svg?v=107532592768653809461655125466" alt="image" ></a>
+            <header>
+                <div id="Discount">
+                  <h3>
+                    Father's Day Sale - Flat 50 % Off on Perfume*
+                    <button id="shop">Shop Now</button>
+                  </h3>
+                </div>
+                <div>
+                  <div id="Icons-div">
+                    <div id="signup-icon">
+                      <img
+                        src="https://static.thenounproject.com/png/4161545-200.png"
+                        alt="Login Icon"
+                      />
+                    </div>
+                    <div id="brand-icon">
+                      <a href="index.html" target="_self">
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                          alt="organic"
+                        /></a>
+                        <a href="BraveEssentials.html">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                            alt="essential"
+                          /></a>
+                          <a href="BellavitaLuxury.html">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                              alt="luxury"
+                            />
+                          </a>
+                    </div>
+                    <div id="checkout">
+                      <img
+                        src="https://static.thenounproject.com/png/1062301-200.png"
+                        alt="search"
+                      />
+                      <img
+                        src="https://static.thenounproject.com/png/635650-200.png"
+                        alt="wishlist"
+                      /><img
+                        src="https://static.thenounproject.com/png/1080872-200.png"
+                        alt="bag"
+                      />
+                    </div>
+                  </div>
+                  <div id="menu">
+                    <a href="#" target="_self"><p>SHOP ALL</p></a>
+          <P>|</P>
+          <a href="newarrivals.html" target="_self"><p>NEW ARRIVALS</p></a>
+          <P>|</P>
+          <a href="bestsellers.html" target="_self"><p>BESTSELLERS</p></a>
+          <P>|</P>
+          <a href="skinCare.html" target="_self"><p>SKIN CARE</p></a><P>|</P>
+          <a href="haircare.html" target="_self"><p>HAIR CARE</p></a>
+          <P>|</P>
+          <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
+          <P>|</P>
+          <a href="ALLPERFUMES.html" target="_self"><p>PERFUMES</p></a>
+          <P>|</P>
+          <a href="combo.html" target="_self"><p>COMBOS</p></a>
+          <P>|</P>
+          <a href="buildabox.html" target="_self"> <p>BUILD A BOX</p></a>
+                  </div>
+                  <hr />
+                </div>
+              </header>
+        
+<div id="brave">
+    <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200_x_399_website_banner_1500x.jpg?v=1654666345">
+</div>
+<div id="sellers"><h3>BESTSELLERS </h3></div>
+<div id="container1">
+</div>
+<div id="rounded1">
+    <button id="#button1"></button>
+    <button id="#button2"></button>
+  </div>
+<div id="sellers"><h3>COMBOS</h3></div>
+<div id="container2">
+</div>
+<div id="rounded2">
+    <button id="#button3"></button>
+    <button id="#button4"></button>
+  </div>
+<div id="sellers"><h3>ALL PRODUCTS</h3></div>
+<div id="container3">
+</div>
+
+
+<footer>
+    <div id="footer1">
+      <div>
+       <h4>ONLINE PRESENCE</h4>
+       <hr>
+       <h5>Amazon</h5>
+       <h5>Nykaa</h5>
+       <h5>Flipkart</h5>
+       <h5>TataCLiq</h5>
+       <h5>Snapdeal</h5>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <hr>
+        <h5>Blogs</h5>
+        <h5>Newsroom</h5>
+        <h5>Terms & Conditions</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Refund and Return</h5>
+        <h5>Shipping Policy</h5>
+        <h5>Reward Policy</h5>
+       </div>
+       <div>
+        <h4>SUPPORT</h4>
+        <hr>
+        <h5>About Us</h5>
+        <h5>Contact Us</h5>
+        <h5>Order Tracking</h5>
+        <h5>All Products</h5>
+        <h5>FAQ</h5>
+       </div>
+       <div>
+        <h4>CONTACT US</h4>
+        <hr>
+        <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+        <h5>shop@bellavitaorganic.com</h5>
+        <h5>+91 9311732440</h5>
+        <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+       </div>
+       <div>
+        <h4>OUR NEWS LETTER</h4>
+        <hr>
+        <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+       <p>Plus, you'll be the first to know about our discounts!</p>
+       <input type="mail" placeholder="Enter your Email Address"><br>
+       <button>Sumbmit</button>
+       </div>
+    </div>
+    <div id="footer2">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+      </div>
+      <div id="socialicon">
+        <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+        <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+        <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+        <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+        <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+      </div>
+      <div>
+        <p>© 2022, Bella Vita Organic</p>
+      </div>
+    </div>
+  </footer>
+ </body>
+ </html>
+<script>
+let productData1=[{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_6_700x.jpg?v=1652458011",
+name:"Brave Essentials - Brightening Face Cream, 50gm",
+description:"Repairs Dark Spots | Evens Skin Tone",
+price:"279",
+stackedPrice:"₹ 399",
+rating:"5.0 ★",
+productID:"E-01",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Bightening-face-cream_1_360x.jpg?v=1653932870",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_24_700x.jpg?v=1652680846",
+name:"Brave Essentials - De-Tan Face Wash, 100ml",
+description:"Removes Tan | Brightens Skin",
+price:"209",
+stackedPrice:"₹ 299",
+rating:"4.8 ★",
+productID:"E-02",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DetanFacewash_1_360x.jpg?v=1653933020"},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_15_700x.jpg?v=1652461703",
+name:"Brave Essentials - SPF 50 Sunscreen, 75ml",
+description:"SPF 50 PA +++ Broad Spectrum UVA/UVB",
+price:"279",
+stackedPrice:"₹ 399",
+rating:"5.0 ★",
+productID:"E-03",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/SPF-50-Sunscreen_1_360x.jpg?v=1653933639"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_700x.jpg?v=1652456887",
+name:"Brave Essentials - 2 In 1 Shampoo Conditioner, 200ml",
+description:"Controls Dandruff & Hair Fall | Anti-Frizz",
+price:"279",
+stackedPrice:"₹ 399",
+rating:"5.0 ★",
+productID:"E-04",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2in1-Shampoo_1_360x.jpg?v=1653933591"},]
+
+
+let productData01=[{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_9_700x.jpg?v=1652459488",
+name:"Brave Essentials - De-Tan Face Scrub, 75ml",
+description:"Brightens | Removes Dead Skin & Blackheads",
+price:"260",
+stackedPrice:"₹ 325",
+rating:"5.0 ★",
+productID:"E-13",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Detan-face-scrub_1.jpg?v=1653932969",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_24_700x.jpg?v=1652680846",
+name:"Brave Essentials - Anti-Acne Face Wash, 100ml",
+description:"Prevents Acne | Clears Breakouts",
+price:"239",
+stackedPrice:"₹ 299",
+rating:"4.8 ★",
+productID:"E-14",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Anti-acne-facewash_1.jpg?v=1653932574"},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_15_700x.jpg?v=1652461703",
+name:"Brave Essentials - Brightening Face Cream, 50gm",
+description:"Repairs Dark Spots | Evens Skin Tone",
+price:"319",
+stackedPrice:"₹ 399",
+rating:"5.0 ★",
+productID:"E-15",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Bightening-face-cream_1.jpg?v=1653932870"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_700x.jpg?v=1652456887",
+name:"Brave Essentials - De-Tan Face Wash, 100ml",
+description:"Removes Tan | Brightens Skin",
+price:"279",
+stackedPrice:"₹ 399",
+rating:"4.8 ★",
+productID:"E-16",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DetanFacewash_1.jpg?v=1653933020"},]
+
+
+
+
+let productData2 = [
+{  imageUrl :"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Skin-Brightening-Combo_1080x_a14b0290-c9af-47cc-9250-e4f81b2c0315_700x.webp?v=1652861318",
+name:"Brave Essentials - Skin Brightening Combo",
+description:"Detan Face Wash, Detan Scrub, Brightening Face Cream",
+price:"716",
+stackedPrice:"₹ 1023",
+rating:"4.7 ★",
+productID:"E-05",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_335c1545-0fc8-4689-949d-51d77f268530_360x.jpg?v=1652861341",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/2_2_700x.jpg?v=1652853851",
+name:"Brave Essentials - Everyday Skincare Combo",
+description:"Removes Tan | Brightens Skin",
+price:"489",
+stackedPrice:"₹ 698",
+rating:"4.8 ★",
+productID:"E-06",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_360x.jpg?v=1652853892",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Beard-Grooming-Combo-3rd-option_1080x_d4fff65f-c2d1-4691-bdef-bb53e6b36e17_700x.webp?v=1653048471",
+name:"Brave Essentials - Beard Grooming Combo",
+description:"Beard Wash, Beard Oil, Beard & Moustache Wax",
+price:"614",
+stackedPrice:"₹ 877",
+rating:"4.7 ★",
+productID:"E-07",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_59e42ed1-9e9f-438d-bcea-edbe9bd468d5_360x.jpg?v=1653048512",},
+ 
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_1_3b9f2a9c-90fb-44b4-9ca8-1e5849b665e1_700x.jpg?v=1652445348",
+name:"Brave Essentials - Acne Clear Skin Combo",
+description:"Anti Acne Face Wash, Spot Clear Pimple Gel, Sunscreen SPF 50",
+price:"733",
+stackedPrice:"₹ 1,047",
+rating:"5.0 ★",
+productID:"E-08",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_a654a940-088c-4b09-9f15-dbfb4600513f_360x.jpg?v=1653049227",}]
+
+
+let productData02 = [
+{  imageUrl :"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Hair-Essential-Combo-3rd-option_1080x_5f63f125-cdc0-4884-8e12-473ba3175e7c_700x.webp?v=1652854712",
+name:"Brave Essentials - Hair Essential Combo",
+description:"Hair Oil, 2-In-1 Shampoo, Hair Cream",
+price:"628",
+stackedPrice:"₹ 1047",
+rating:"4.6 ★",
+productID:"E-17",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_82876f7d-c613-43f4-a576-3b51d084d2b7.jpg?v=1652854918",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Personal-Hygiene-Combo_1080x_3497df80-fb20-4482-bd96-aff8f852ad2e_700x.webp?v=1652861064",
+name:"Brave Essentials -Personal Hygiene Combo",
+description:"Intimate Scrub, Ball Spray, Roll-On Deodorant",
+price:"658",
+stackedPrice:"₹ 1097",
+rating:"5.0 ★",
+productID:"E-18",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_a0b78020-d351-4908-9aa5-e9a6976cb552.jpg?v=1652861079",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Nightcare-Combo_1080x_9b4aa2f6-2b49-4188-b445-4840027bfeeb_700x.webp?v=1652858058",
+name:"Brave Essentials - Nightcare Combo",
+description:"Detan Face Wash, Eye Creme",
+price:"374",
+stackedPrice:"₹ 624",
+rating:"4.7 ★",
+productID:"E-19",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_1_ffc6a328-3367-4fc7-a993-1256d913f4b1.jpg?v=1652858148",},
+ 
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Head-to-Toe-Combo_1080x_722db45d-741b-4bbd-9a15-2d0070383487_700x.webp?v=1652856400",
+name:"Brave Essentials - Top To Toe Combo",
+description:"2 In 1 Shampoo Conditioner, Turmeric Body Wash, Detan Face Wash",
+price:"628",
+stackedPrice:"₹ 1,047",
+rating:"4.6 ★",
+productID:"E-20",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/shampoo_1_f4b738d9-6056-4fb9-98e5-618387369ec9.jpg?v=1652856621",}]
+
+let productData3 = [
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_7_700x.jpg?v=1652458103",
+name:"Brave Essentials - Charcoal Body Scrub, 100gm",
+description:"Removes Dirt & Tan | Exfoliates Dead Skin Cells",
+price:"179",
+stackedPrice:"₹ 299",
+rating:"5.0 ★",
+productID:"E-09",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Charcoal-body-scrub_1.jpg?v=1653932920"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_14_700x.jpg?v=1652461583",
+name:"Brave Essentials - Roll On Deodorant, 50ml",
+description:"Anti Perspirant | Lighten Under Arms",
+price:"179",
+stackedPrice:"₹ 299",
+rating:"4.7 ★",
+productID:"E-10",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Rollon_1_360x.jpg?v=1653933538"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/1_5_700x.jpg?v=1654254927",
+name:"Brave Essentials Impression Perfume, 100ml",
+description:"A Luxurious & Long-Lasting Fragrance",
+price:"359",
+stackedPrice:"₹ 599",
+rating:"5.0 ★",
+productID:"E-11",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/4_4_360x.jpg?v=1654254927"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_19_700x.jpg?v=1652461969",
+name:"Brave Essentials - Under Eye Cream, 20ml",
+description:"Repairs Dark Circles & Fine Lines Reduces Puffiness",
+price:"195",
+stackedPrice:"₹ 325",
+rating:"5.0 ★",
+productID:"E-12",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Under-eye-cream_1_360x.jpg?v=1653933741"},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_16_700x.jpg?v=1652461763",
+name:"Brave Essentials - Styling Hair Wax, 100gm",
+description:"Strong Hold; Shiny, Conditioned Hair",
+price:"195",
+stackedPrice:"₹ 325",
+rating:"5.0 ★",
+productID:"E-13",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Styling-hair-wax_1_360x.jpg?v=1653933321",},
+{   imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_10_700x.jpg?v=1652460567",
+name:"Brave Essentials - Lip Balm, 5gm",
+description:"Moisturise | Soothes Dry & Chapped Lips",
+price:"149",
+stackedPrice:"₹ 249",
+    rating:"5.0 ★",
+productID:"E-14",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/LipBalmListing_1.jpg?v=1653933424",},
+
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/image_700x.jpg?v=1655122401",
+name:"Brave Essentials - Nourishing Hair Cream, 100gm",
+description:"Non - Greasy | Soft Hold Styling",
+price:"179",
+stackedPrice:"₹299",
+rating:"5.0 ★",
+productID:"E-15",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Nourishing-hair-cream_1.jpg?v=1655122401",
+},
+{  imageUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Artboard1_9_700x.jpg?v=1652459488",
+name:"Brave Essentials - De-Tan Face Scrub, 75ml",
+description:"Brightens | Removes Dead Skin & Blackheads",
+price:"195",
+stackedPrice:"₹ 325",
+rating:"5.0 ★",
+productID:"E-16",
+hoverUrl:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Detan-face-scrub_1.jpg?v=1653932969"},
+];
+
+let cart = JSON.parse(localStorage.getItem("cartData")) || [];
+productData1.forEach(display1);
+productData2.forEach(display2);
+productData3.forEach(display3);
+function display1(elem){
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.setAttribute("src",elem.imageUrl);
+    let name = document.createElement("h5");
+    name.innerText = elem.name
+   
+    let description = document.createElement("p");
+    description.innerText = elem.description
+    let prdiv = document.createElement("div");
+    let price = document.createElement("h4");
+    let rupee = document.createElement("h4");
+    rupee.innerText = "₹"
+    price.innerText = elem.price;
+    let stackedprice = document.createElement("p");
+    stackedprice.innerText = elem.stackedPrice;
+    let rating= document.createElement("h3");
+    rating.innerText = elem.rating;
+    let cartButton = document.createElement("button");
+    cartButton.innerText = "ADD TO CART";
+    document.querySelector("#container1").append(div)
+    div.append(img,name,description,prdiv,cartButton)
+    prdiv.append(rupee,price,stackedprice,rating)
+    cartButton.addEventListener("click",function(){
+        if(check()){
+            alert("ALREADY ADDED TO CART")
+        }else{
+            cart.push(elem)
+        localStorage.setItem("cartData",JSON.stringify(cart))
+        window.location.href="cart.html"
+        }
+    })
+    function check(){
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].productID == elem.productID){
+                return true;
+            }
+        }
+        return false;
+    }
+    div.addEventListener("mouseover",mouseOn)
+    function mouseOn(){
+        div.style.cursor = "pointer"
+        img.setAttribute("src",elem.hoverUrl)
+    }
+    div.addEventListener("mouseout",mouseoff)
+    function mouseoff(){
+        img.setAttribute("src",elem.imageUrl)
+    }
+
+    img.addEventListener("click",redirect)
+    name.addEventListener("click",redirect)
+    function redirect(){
+        localStorage.setItem("desciption",JSON.stringify(elem))
+        window.location.href = "skin-description/s-12.html"
+    }
+
+}
+
+document.querySelector("#rounded1>button").addEventListener("click",change1)
+document.querySelector("#rounded1>button+button").addEventListener("click",change2)
+
+function change1(){
+  document.querySelector("#rounded1>button+button").style.backgroundColor = "white"
+  document.querySelector("#rounded1>button").style.backgroundColor = "black"
+    document.querySelector("#container1").innerHTML = "";
+    productData1.forEach(display1);
+}
+
+function change2(){
+  document.querySelector("#rounded1>button+button").style.backgroundColor = "black"
+  document.querySelector("#rounded1>button").style.backgroundColor = "white"
+    document.querySelector("#container1").innerHTML = "";
+    productData01.forEach(display1);
+}
+
+
+// second function//////////////////////////////////////
+
+function display2(elem){
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.setAttribute("src",elem.imageUrl);
+    let name = document.createElement("h5");
+    name.innerText = elem.name
+    let description = document.createElement("p");
+    description.innerText = elem.description
+    let prdiv = document.createElement("div");
+    let price = document.createElement("h4");
+    let rupee = document.createElement("h4");
+    rupee.innerText = "₹"
+    price.innerText = elem.price;
+    let stackedprice = document.createElement("p");
+    stackedprice.innerText = elem.stackedPrice;
+    let rating= document.createElement("h3");
+    rating.innerText = elem.rating;
+    let cartButton = document.createElement("button");
+    cartButton.innerText = "ADD TO CART";
+    document.querySelector("#container2").append(div)
+    div.append(img,name,description,prdiv,cartButton)
+    prdiv.append(rupee,price,stackedprice,rating)
+    cartButton.addEventListener("click",function(){
+        if(check()){
+            alert("ALREADY ADDED TO CART")
+        }else{
+            cart.push(elem)
+        localStorage.setItem("cartData",JSON.stringify(cart))
+        window.location.href="cart.html"
+        }
+    })
+    function check(){
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].productID == elem.productID){
+                return true;
+            }
+        }
+        return false;
+    }
+    div.addEventListener("mouseover",mouseOn)
+    function mouseOn(){
+        div.style.cursor = "pointer"
+        img.setAttribute("src",elem.hoverUrl)
+    }
+    div.addEventListener("mouseout",mouseoff)
+    function mouseoff(){
+        img.setAttribute("src",elem.imageUrl)
+    }
+    img.addEventListener("click",redirect)
+    name.addEventListener("click",redirect)
+    function redirect(){
+        localStorage.setItem("desciption",JSON.stringify(elem))
+        window.location.href = "skin-description/s-12.html"
+    }
+
+}
+
+
+document.querySelector("#rounded2>button").addEventListener("click",change3)
+document.querySelector("#rounded2>button+button").addEventListener("click",change4)
+
+function change3(){
+  document.querySelector("#rounded2>button+button").style.backgroundColor = "white"
+  document.querySelector("#rounded2>button").style.backgroundColor = "black"
+    document.querySelector("#container2").innerHTML = "";
+    productData2.forEach(display2);
+}
+
+function change4(){
+  document.querySelector("#rounded2>button+button").style.backgroundColor = "black"
+  document.querySelector("#rounded2>button").style.backgroundColor = "white"
+    document.querySelector("#container2").innerHTML = "";
+    productData02.forEach(display2);
+}
+
+// //////////////////////function 3
+
+
+function display3(elem){
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.setAttribute("src",elem.imageUrl);
+    let name = document.createElement("h5");
+    name.innerText = elem.name
+    let a = document.createElement("a");
+    a.setAttribute("href",elem.anchor)
+    a.append(name)
+    let description = document.createElement("p");
+    description.innerText = elem.description
+    let prdiv = document.createElement("div");
+    let price = document.createElement("h4");
+    let rupee = document.createElement("h4");
+    rupee.innerText = "₹"
+    price.innerText = elem.price;
+    let stackedprice = document.createElement("p");
+    stackedprice.innerText = elem.stackedPrice;
+    let rating= document.createElement("h3");
+    rating.innerText = elem.rating;
+    let cartButton = document.createElement("button");
+    cartButton.innerText = "ADD TO CART";
+    document.querySelector("#container3").append(div)
+    div.append(img,a,description,prdiv,cartButton)
+    prdiv.append(rupee,price,stackedprice,rating)
+    cartButton.addEventListener("click",function(){
+        if(check()){
+            alert("ALREADY ADDED TO CART")
+        }else{
+            cart.push(elem)
+        localStorage.setItem("cartData",JSON.stringify(cart))
+        window.location.href="cart.html"
+        }
+    })
+    function check(){
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].productID == elem.productID){
+                return true;
+            }
+        }
+        return false;
+    }
+    div.addEventListener("mouseover",mouseOn)
+    function mouseOn(){
+        div.style.cursor = "pointer"
+        img.setAttribute("src",elem.hoverUrl)
+    }
+    div.addEventListener("mouseout",mouseoff)
+    function mouseoff(){
+        img.setAttribute("src",elem.imageUrl)
+    }
+    img.addEventListener("click",redirect)
+    name.addEventListener("click",redirect)
+    function redirect(){
+        localStorage.setItem("desciption",JSON.stringify(elem))
+        window.location.href = "skin-description/s-12.html"
+    }
+   
+}
+</script>
