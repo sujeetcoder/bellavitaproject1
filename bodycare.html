@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Care</title>
+    <style>
+        /* Sujeet */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        body>h5{
+            margin-top: 100px;
+            margin-left: 50px;
+            color: #2b5006;
+            
+        }
+        #refine{
+            margin-left: 40px;
+            margin-top: 25px;
+        }
+        #first{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 47px;
+        }
+        #first>div:first-child{
+            font-size: x-large;
+
+        }
+       
+        #first>div:last-child{
+            display: flex;
+        }
+        #first>div>select{
+            border: none;
+            margin-top: -7px;
+        }
+
+        /* main part */
+        #main{
+            display: flex;
+            width: 94%;
+            /* height: 900px; */
+            margin: auto;
+            margin-top: 15px;
+            justify-content: space-between;
+        }
+        #sidebar{
+            width: 18%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #sidebar>div{
+            margin-top: 23px;
+        }
+        #sidebar>div:hover{
+            text-decoration: underline #CBD7C2;
+        }
+        #sidebar>div>select{
+            width: 100%;
+            border: none;
+            margin-left: -4px;
+        }
+/* product start */
+        #product{
+            width: 80%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 40px 25px;
+        }
+        #product>div{
+            width: 273px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            border-radius: 15px;
+        }
+        #product>div>img{
+            width: 100%;
+            height: 60%;
+            border-radius: 10px 10px 0px 0px;
+            margin-bottom: 15px;
+        }
+        #product>div>div{
+            padding: 0px 15px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px;
+        }
+        #product>div>div>h5{
+            margin-left: -115px;
+            margin-top: 4px;
+        }
+      
+        #product>div>h5, #product>div>p{
+            height: 60px;
+            padding: 0px 15px;
+        }
+        #product>div>button{
+            width: 100%;
+            height: 45px;
+            background-color: #475d4b;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-size: large;
+            margin-top: 5px;
+        }
+        #rs{
+            display: flex;
+        }
+
+
+         /* mainpic part */
+        #mainpic{
+            width: 79%;
+            height: 238px;
+            margin: auto;
+            margin-bottom: -80px;
+            margin-top: 40px;
+        }
+        #mainpic>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        /* Header */
+        header{
+    position: sticky;
+    top: 0px;
+   z-index: 1;
+   background:white;
+   
+}
+#Discount{
+    width: 100%;
+    height: 40px;
+    background-color: #e5f0da;
+    
+    top: 0px;
+}
+#Discount>h3{
+    padding-top: 5px;
+}
+#Discount>h3>button{
+    width:100px;
+    color:white;
+    background-color: #475d4b;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+h3{
+    
+    text-align: center;
+    position:relative;
+    
+}
+
+#Icons-div{
+    display: flex;
+  justify-content: space-around;
+margin-top: 10px;
+    height: 100px;
+    
+    
+}
+#signup-icon>a>img{
+    margin-top: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+#brand-icon{
+    display: flex;
+ ;
+  
+}
+#brand-icon>div>a>img{
+    width: 70px;
+   margin: 5px;
+   cursor: pointer;
+}
+#checkout{
+    display:flex;
+}
+#checkout>div>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+   cursor: pointer;
+   
+}
+#checkout>div>a>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+   cursor: pointer;
+   
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    cursor: pointer;
+    color: #475d4b;
+}
+#menu>a{
+text-decoration: none;
+}
+#menu>a>p{
+    color: #475d4b;
+    }
+#menu>a>p:hover{
+    text-decoration: underline #cbd7c2;
+    
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    color: #f4f6f5;
+    
+}
+#whatsapp{
+    position: fixed;
+    top: 680px;
+    left: 1450px;
+    height: 55px;
+    width: 56px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+/* Footer */
+#footer1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+    margin-top: 50px;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+
+
+        /* Sujeet End */
+
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <a href="https://chat.whatsapp.com/DXPebvfGUwH0QQNd8foVfn" target="_blank"><img id="whatsapp" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/336/assets/whatsapp.svg?v=107532592768653809461655125466" alt="image" ></a>
+
+    <div id="Discount">
+        <h3>
+          Father's Day Sale - Flat 50 % Off on Perfume*
+          <button>Shop Now</button>
+        </h3>
+      </div>
+      <header>
+        <div id="Discount">
+          <h3>
+            Father's Day Sale - Flat 50 % Off on Perfume*
+            <button>Shop Now</button>
+          </h3>
+        </div>
+        <div id="scroll-div">
+          <div id="Icons-div">
+            <div id="signup-icon">
+              <a href="#">
+              <img
+                src="https://static.thenounproject.com/png/4161545-200.png"
+                alt="Login Icon"
+              />
+            </a>
+            </div>
+            <div id="brand-icon">
+              <div >
+                <a href="index.html" target="_self">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                alt="organic"
+              />
+            </a>
+            </div>
+            <div >
+              <a href="BraveEssentials.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                alt="essential"
+              />
+            </a>
+            </div>
+            <div >
+              <a href="BellavitaLuxury.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                alt="luxury"
+              />
+            </a>
+            </div>
+            </div>
+            <div id="checkout">
+              <div>
+              <img
+                src="https://static.thenounproject.com/png/1062301-200.png"
+                alt="search"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.thenounproject.com/png/635650-200.png"
+                alt="wishlist"
+              />
+            </div>
+            <div>
+              <a href="cart.html"><img
+                src="https://static.thenounproject.com/png/1080872-200.png"
+                alt="bag"
+              />
+            </a>
+            </div>
+            </div>
+          </div>
+          <div id="menu">
+            <a href="#" target="_self"><p>SHOP ALL</p></a>
+            <P>|</P>
+            <a href="newarrivals.html" target="_self"><p>NEW ARRIVALS</p></a>
+            <P>|</P>
+            <a href="bestsellers.html" target="_self"><p>BESTSELLERS</p></a>
+            <P>|</P>
+            <a href="skinCare.html" target="_self"><p>SKIN CARE</p></a><P>|</P>
+  
+            <a href="haircare.html" target="_self"><p>HAIR CARE</p></a>
+            <P>|</P>
+            <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
+            <P>|</P>
+            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <P>|</P>
+            <a href="combo.html" target="_self"><p>COMBOS</p></a>
+            <P>|</P>
+            <a href="buildabox.html" target="_self"> <p>BUILD A BOX</p></a>
+          </div>
+          <hr />
+        </div>
+      </header>
+
+    <h5>Home > Collection > Body Care > # All Body care Products </h5>
+    <div id="refine"><img src="img/refine.png" alt=""></div>
+    <div id="first">
+        <div><u>CATEGORIES</u></div>
+        <div id="unit">12 products</div>
+        <div>
+            <p>Sort by:- </p>
+            <select name="featured" id="featured">
+                <option value="Featured">Featured</option>
+                <option value="Alpha">Alphabetticaly, A to Z</option>
+                <option value="rev Alpha">Alphabetticaly, Z to A</option>
+                <option value="LH">Price, Low to High</option>
+                <option value="HL">Price, High to Low  </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main part -->
+    <div id="main">
+        <div id="sidebar">
+            <div>Shop All</div>
+            <div><a href="newarrivals.html"><u>New Arrival</u></a></div>
+            <div><a href="bestsellers.html">Bestsellers</a></div>
+            <div>
+                <select name="" id="skin">
+                    <option value="Skin Care">Skin Care</option>
+                </select>
+            </div>
+            <div>
+                <select name="" id="hair">
+                    <option value="Hair Care">Hair Care</option>
+                </select>
+            </div>
+            <div>
+                <select name="" id="body">
+                    <option value="Body Care">Body Care</option>
+                </select>
+            </div>
+            <div>
+                <select name="" id="perfume">
+                    <option value="Perfume">Perfume</option>
+                </select>
+            </div>
+            <div>
+                <select name="" id="combo">
+                    <option value="Combos">Combos</option>
+                </select>
+            </div>
+            <div>
+               <a href="buildabox.html">Build a box</a> 
+            </div>
+        </div>
+        <!-- product -->
+        <div id="product">
+           
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="footer1">
+          <div>
+           <h4>ONLINE PRESENCE</h4>
+           <hr>
+           <h5>Amazon</h5>
+           <h5>Nykaa</h5>
+           <h5>Flipkart</h5>
+           <h5>TataCLiq</h5>
+           <h5>Snapdeal</h5>
+          </div>
+          <div>
+            <h4>INFORMATION</h4>
+            <hr>
+            <h5>Blogs</h5>
+            <h5>Newsroom</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>Privacy Policy</h5>
+            <h5>Refund and Return</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Reward Policy</h5>
+           </div>
+           <div>
+            <h4>SUPPORT</h4>
+            <hr>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+            <h5>Order Tracking</h5>
+            <h5>All Products</h5>
+            <h5>FAQ</h5>
+           </div>
+           <div>
+            <h4>CONTACT US</h4>
+            <hr>
+            <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+            <h5>shop@bellavitaorganic.com</h5>
+            <h5>+91 9311732440</h5>
+            <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+           </div>
+           <div>
+            <h4>OUR NEWS LETTER</h4>
+            <hr>
+            <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+           <p>Plus, you'll be the first to know about our discounts!</p>
+           <input type="mail" placeholder="Enter your Email Address"><br>
+           <button>Sumbmit</button>
+           </div>
+        </div>
+        <div id="footer2">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+          </div>
+          <div id="socialicon">
+            <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+            <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+            <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+            <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+          </div>
+          <div>
+            <p>© 2022, Bella Vita Organic</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+<script>
+/* SK */
+let bestSellersData = [
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteMen-02_360x.jpg?v=1652081039",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteMen-01_2_700x.jpg?v=1651698262",
+                name: "Deo White Natural Roll On Deodorant For Men, 50ml",
+                description: "Underarm Skin Whitening",
+                price: 199,
+                stackedPrice: "",
+                rating: "4.7 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteWomen-02_360x.jpg?v=1652081172",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeoWhiteWomen-01_1_700x.jpg?v=1651698262",
+                name: "Deo White Natural Roll On Deodorant For Women, 50ml",
+                description: "Underarm Skin Whitening",
+                price: 199,
+                stackedPrice: "",
+                rating: "4.6 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ChakraCleanseBodyWash-02_6c432545-301c-411f-98b5-28f75c665738_360x.jpg?v=1652168244",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ChakraCleanseBodyWash-01_2_700x.jpg?v=1652168244",
+                name: "Chakra Cleanse Body Wash, 300ml",
+                description: "Purifying, Detoxifying & Spiritual Healing",
+                price: 275,
+                stackedPrice: "₹ 299",
+                rating: "4.7 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/ChakraCleanseBodyWash-02_6c432545-301c-411f-98b5-28f75c665738_360x.jpg?v=1652168244",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/FeetLove-01_1_700x.jpg?v=1651714143",
+                name: "Feet Love Foot Cream, 50gm",
+                description: "Soothing & Moisturising Foot Cream",
+                price: 275,
+                stackedPrice: "₹ 299",
+                rating: "4.7 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineNude_2_360x.jpg?v=1632826382",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineNude-01_700x.jpg?v=1651698235",
+                name: "Celeb Shine Body Lotion Nude, 50ml",
+                description: "Illuminate, Moisturise, Nourish",
+                price: 399,
+                stackedPrice: "₹ 499",
+                rating: "4.8 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-02_563c258d-147f-4a65-858b-1143f2293b0a_360x.jpg?v=1651571281",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Glowtion-01_cab54ba7-e00c-4426-87c1-249ee10304c6_700x.jpg?v=1651571277",
+                name: "Glowtion - Face & Body Lotion,100ml",
+                description: "Moisturizing & Nourishing",
+                price: 275,
+                stackedPrice: "₹ 299",
+                rating: "5.0 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-02_360x.jpg?v=1651696252",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/C-Glow-01_c664d6e2-165a-4f18-824a-461daed32c3f_700x.jpg?v=1651696252",
+                name: "C-Glow Body Wash Bar, 150gm",
+                description: "Brightening & Moisturizing",
+                price:  149,
+                stackedPrice: "₹  199",
+                rating: "5.0 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Coalwave-02_61d1abea-055a-42e4-84cb-86b5146fcd51_360x.jpg?v=1651696320",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Coalwave-01_700x.jpg?v=1651696320",
+                name: "CoalWave Body Wash Bar, 150gm",
+                description: "Exfoliating & Deeply Cleansing",
+                price: 149,
+                stackedPrice: "₹ 199",
+                rating: "5.0 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UbtanPlus-02_64ec64b0-7f4c-4f22-8dbd-10862a244480_360x.jpg?v=1651696408",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UbtanPlus-01_700x.jpg?v=1651696408",
+                name: "Ubtan Plus Body Wash Bar,150gm",
+                description: "Brightens & Clarifies Skin",
+                price: 149,
+                stackedPrice: "₹ 199",
+                rating: "4.8 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeTox-02_360x.jpg?v=1651696345",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/DeTox-01_700x.jpg?v=1651696345",
+                name: "Detox Body Wash Bar, 150gm",
+                description: "Deeply Cleansing & Hydrating",
+                price:  149,
+                stackedPrice: "₹ 199",
+                rating: "5.0 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Chakracleanse-02_fb6516c0-5720-4c27-8081-fd1deb82c218_360x.jpg?v=1651696291",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Chakracleanse-01_700x.jpg?v=1651696291",
+                name: "Chakra Cleanse Body Wash Bar,150gm",
+                description: "Purifying, Detoxifying & Spiritual Healing",
+                price:  149,
+                stackedPrice: "₹ 199",
+                rating: "5.0 ★"
+            },
+            {
+                hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineGold-02_360x.jpg?v=1652176140",
+                imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/CelebshineGold-01_e00fff97-54c2-489f-b054-88b90a7e8cac_700x.jpg?v=1652176140",
+                name: "Celebshine Body Lotion Gold - 50ml",
+                description: "Deeply Cleansing & Hydrating",
+                price:  399,
+                stackedPrice: "₹ 499",
+                rating: "4.8 ★"
+            }
+    ]
+
+    /* localStorage.setItem("bestSellersData", JSON.stringify(bestSellers)) */
+    let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+
+    /* let bestSellersData = JSON.parse(localStorage.getItem("bestSellersData")) || [] */
+            displaydata(bestSellersData)
+
+            let unit = bestSellersData.length
+            document.querySelector("#unit").innerText = unit +" " + "products"
+
+            function displaydata(bestSellersData){
+                document.querySelector("#product").innerHTML = ""
+                bestSellersData.forEach(function (el){
+                    let div1 = document.createElement("div")
+                    /* Hover */
+                    div1.addEventListener("mouseover", function(){
+                        mouseon(el)
+                    })
+                    function mouseon(el){
+                        div1.style.cursor = "pointer"
+                        img.src = el.hoverUrl
+                    }
+                    div1.addEventListener("mouseout", function(){
+                        mouseoff(el)
+                    })
+                    function mouseoff(el){
+                        img.src = el.imageUrl
+                    }
+                    /* Hover */
+                    
+                    let img = document.createElement("img")
+                    img.src = el.imageUrl
+                    img.addEventListener("click", function(){
+                         localStorage.setItem("desciption",JSON.stringify(el))
+                         window.location.href = "skin-description/s-12.html"
+                    })
+
+                    let name = document.createElement("h5")
+                    name.innerText = el.name
+                    name.addEventListener("click", function(){
+                         localStorage.setItem("desciption",JSON.stringify(el))
+                         window.location.href = "skin-description/s-12.html"
+                    })
+
+                    let disc = document.createElement("p")
+                    disc.innerText = el.description
+                    disc.addEventListener("click", function(){
+                         localStorage.setItem("desciption",JSON.stringify(el))
+                         window.location.href = "skin-description/s-12.html"
+                    })
+/* A */
+                    let div2 = document.createElement("div")
+                    div2.addEventListener("click", function(){
+                         localStorage.setItem("desciption",JSON.stringify(el))
+                         window.location.href = "skin-description/s-12.html"
+                    })
+                    let rs = document.createElement("h3")
+                    rs.innerText = "₹ "
+                    rs.setAttribute("id","rs")
+                    
+                    let price = document.createElement("h4")
+                    price.innerText = el.price
+
+                    rs.append(price)
+                    let stackedPrice = document.createElement("h5")
+                    let s = document.createElement("s")
+                    s.innerText = el.stackedPrice
+                    stackedPrice.append(s)
+
+                    let rating = document.createElement("h3")
+                    rating.innerText = el.rating
+
+                    div2.append(rs,stackedPrice,rating)
+/* A */
+                    let button = document.createElement("button")
+                    button.innerText = "ADD TO CART"
+                    button.addEventListener("click", function(){
+                        if(checkfun(cartData,el)==false){
+                            cartData.push(el)
+                        localStorage.setItem("cartData", JSON.stringify(cartData))
+                             window.location.href = "cart.html"
+                        } else{
+                            alert("ALREADY ADDED TO CART")
+                            window.location.href = "cart.html"
+                        }
+                        
+                    })
+
+                    div1.append(img,name,disc,div2,button)
+                    document.querySelector("#product").append(div1)
+
+                })
+            }
+
+
+            function checkfun(cartData,el){
+              let x = cartData.filter(function(elem){
+                    return elem.name == el.name
+                })
+                if(x.length>0){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+
+
+             
+             document.querySelector("#featured").addEventListener("change", function(){
+                filterit(document.querySelector("#featured").value,bestSellersData)
+            })
+
+            /* filtred run program */
+
+            function filterit(getvalue,bestSellersData){
+                if(getvalue=="Alpha"){
+                    filterbyAZ(bestSellersData)
+                }else if(getvalue=="rev Alpha"){
+                    filterbyZA(bestSellersData)
+                }else if(getvalue=="LH"){
+                    filterbyLH(bestSellersData)
+                }else if(getvalue=="HL"){
+                    filterbyHL(bestSellersData)
+                }
+            }
+            /* Sorting Functions */
+            /* Alphabatic */
+            function filterbyAZ(bestSellersData){
+                let filter = bestSellersData.sort(function(a,b){
+                    if(a.name>b.name) return 1
+                    if(a.name<b.name) return -1
+                    return 0
+                })
+                displaydata(filter)
+/*                 console.log(filter)
+ */               
+            }
+            function filterbyZA(bestSellersData){
+                let filter = bestSellersData.sort(function(a,b){
+                    if(a.name>b.name) return -1
+                    if(a.name<b.name) return 1
+                    return 0
+                })
+                displaydata(filter)
+/*                 console.log(filter)
+ */               
+            }
+            /* Price based */
+            function filterbyLH(bestSellersData){
+                let filter = bestSellersData.sort(function(a,b){
+                    return a.price - b.price
+                })
+                displaydata(filter)
+/*                 console.log(filter)
+ */               
+            }
+
+            function filterbyHL(bestSellersData){
+                let filter = bestSellersData.sort(function(a,b){
+                    return b.price - a.price
+                })
+                displaydata(filter)
+/*                 console.log(filter)
+ */               
+            }
+
+
+
+
+
+    /* SK end */
+
+
+
+</script>
