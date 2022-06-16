@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>build a box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        #upper{
+            width: 80%;
+            margin: auto;
+            height: 250px;
+            margin-top: 32px;
+            
+        }
+        #upper>img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+        .box{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            height: 370px;
+            margin-top: 45px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border-radius: 15px;
+        }
+        .box>div{
+            width: 48%;
+            height: 100%;
+            
+        }
+        .box>div:nth-child(2){
+            
+            padding: 80px 70px;
+        }
+        .box>div>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px 0px 0px 15px;
+        }
+        .box>div:nth-child(2)>p{
+            line-height: 25px;
+        }
+        .box>div:nth-child(2)>button{
+            width: 120px;
+            height: 45px;
+            margin-top: 20px;
+            background-color: #475d4b;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-size: larger;
+        }
+        .box>div:nth-child(2)>h1{
+            color: #475d4b;
+            margin-bottom: 15px;
+        }
+/* second div */
+        .box2{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            height: 370px;
+            margin-top: 45px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border-radius: 15px;
+        }
+        
+        .box2>div{
+            width: 50%;
+            height: 100%;
+            
+        }
+        .box2>div:nth-child(1){
+            
+            padding: 80px 70px;
+        }
+        .box2>div>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 15px 15px 0px;
+            /* margin-right: -50px; */
+        }
+        .box2>div:nth-child(1)>p{
+            
+            line-height: 25px;
+            text-align: end;
+        }
+        .box2>div:nth-child(1)>button{
+            width: 120px;
+            height: 45px;
+            margin-top: 20px;
+            background-color: #475d4b;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-size: larger;
+            margin-left: 74%;
+        }
+        .box2>div:nth-child(1)>h1{
+            color: #475d4b;
+            margin-bottom: 15px;
+            text-align: end;
+        }
+
+
+         /* Header */
+         header{
+    position: sticky;
+    top: 0px;
+   z-index: 1;
+   background:white;
+   
+}
+#Discount{
+    width: 100%;
+    height: 40px;
+    background-color: #e5f0da;
+    
+    top: 0px;
+}
+#Discount>h3{
+    padding-top: 5px;
+}
+#Discount>h3>button{
+    width:100px;
+    color:white;
+    background-color: #475d4b;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+h3{
+    
+    text-align: center;
+    position:relative;
+    
+}
+
+#Icons-div{
+    display: flex;
+  justify-content: space-around;
+margin-top: 10px;
+    height: 100px;
+    
+    
+}
+#signup-icon>a>img{
+    margin-top: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+#brand-icon{
+    display: flex;
+ ;
+  
+}
+#brand-icon>div>a>img{
+    width: 70px;
+   margin: 5px;
+   cursor: pointer;
+}
+#checkout{
+    display:flex;
+}
+#checkout>div>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+   cursor: pointer;
+   
+}
+#checkout>div>a>img{
+    width: 30px;
+    margin-top: 20px;
+   padding: 5px;
+   cursor: pointer;
+   
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    cursor: pointer;
+    color: #475d4b;
+}
+#menu>a{
+text-decoration: none;
+}
+#menu>a>p{
+    color: #475d4b;
+    }
+#menu>a>p:hover{
+    text-decoration: underline #cbd7c2;
+    
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    color: #f4f6f5;
+    
+}
+#whatsapp{
+    position: fixed;
+    top: 640px;
+    left: 1450px;
+    height: 55px;
+    width: 56px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+/* Footer */
+#footer1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F1F7EC;
+    margin-top: 50px;
+  }
+  #footer1>div{
+    margin-top: 40px;
+    width:180px;
+  }
+  #footer1>div>hr{
+    width:60px;
+   margin-bottom: 30px;
+   background-color: green;
+   margin-left:-3px;
+   height: 2px;
+   border: none;
+  }
+  #footer1>div>h5{
+    margin-bottom: 20px;
+  }
+  #footer1>div>input{
+    width:100%;
+    height:40px;
+    border:1px solid #475D4B;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #footer1>div>button{
+    width:70%;
+    height:40px;
+    background-color:  #475D4B;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border:none;
+  }
+  #footer1>div>h5:hover{
+    color: green;
+    cursor: pointer;
+  }
+  #Download{
+    width: 100%;
+    height: 500px;
+    background-color: #E5F0DA;
+    align-items: center;
+  }
+  #downloadapp{
+   margin-top: -250px;
+    background-color: #475D4B;
+    color: #F1F7EC;
+    text-align: right;
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 100px;
+  }
+  h1{
+    margin-right: 350px;
+  }
+  #android{
+    margin-bottom:100px;
+    margin-left: 100px;
+  }
+  #ios{
+    margin-bottom:100px;
+    margin-left: 50px;
+  }
+  #mobile{
+    margin-left: 350px;
+  }
+#footer2{
+    background-color: #475D4B;;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+    padding-top:10px;
+}
+#socialicon{
+    display:flex;
+    height:25px;
+}
+
+
+
+        /* Sujeet End */
+
+
+
+    </style>
+</head>
+<body>
+    <a  href="https://chat.whatsapp.com/DXPebvfGUwH0QQNd8foVfn" target="_blank"><img id="whatsapp" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/336/assets/whatsapp.svg?v=107532592768653809461655125466" alt="image"></a>
+
+    <div id="Discount">
+        <h3>
+          Father's Day Sale - Flat 50 % Off on Perfume*
+          <button>Shop Now</button>
+        </h3>
+      </div>
+   
+      <header>
+        </div>
+        <div id="scroll-div">
+          <div id="Icons-div">
+            <div id="signup-icon">
+              <a href="#">
+              <img
+                src="https://static.thenounproject.com/png/4161545-200.png"
+                alt="Login Icon"
+              />
+            </a>
+            </div>
+            <div id="brand-icon">
+              <div >
+                <a href="index.html" target="_self">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
+                alt="organic"
+              />
+            </a>
+            </div>
+            <div >
+              <a href="BraveEssentials.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Brave_220_x_220.png?v=1653304701"
+                alt="essential"
+              />
+            </a>
+            </div>
+            <div >
+              <a href="BellavitaLuxury.html">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
+                alt="luxury"
+              />
+            </a>
+            </div>
+            </div>
+            <div id="checkout">
+              <div>
+              <img
+                src="https://static.thenounproject.com/png/1062301-200.png"
+                alt="search"
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.thenounproject.com/png/635650-200.png"
+                alt="wishlist"
+              />
+            </div>
+            <div>
+              <a href="cart.html"><img
+                src="https://static.thenounproject.com/png/1080872-200.png"
+                alt="bag"
+              />
+            </a>
+            </div>
+            </div>
+          </div>
+          <div id="menu">
+            <a href="#" target="_self"><p>SHOP ALL</p></a>
+            <P>|</P>
+            <a href="newarrivals.html" target="_self"><p>NEW ARRIVALS</p></a>
+            <P>|</P>
+            <a href="bestsellers.html" target="_self"><p>BESTSELLERS</p></a>
+            <P>|</P>
+            <a href="skinCare.html" target="_self"><p>SKIN CARE</p></a><P>|</P>
+  
+            <a href="haircare.html" target="_self"><p>HAIR CARE</p></a>
+            <P>|</P>
+            <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
+            <P>|</P>
+            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <P>|</P>
+            <a href="combo.html" target="_self"><p>COMBOS</p></a>
+            <P>|</P>
+            <a href="buildabox.html" target="_self"> <p>BUILD A BOX</p></a>
+          </div>
+          <hr />
+        </div>
+      </header>
+
+    <div id="upper"><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Build_A_Box_Page_Banner_1_5cd0eceb-a13d-4d4f-a780-9332250f2693_1500x.png?v=1651688128" alt=""></div>
+    <div class="box">
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_ed93fc23-93d4-4106-800b-f998cafc4fb7.jpg?v=1651702392" alt=""></div>
+        <div>
+            <h1>Flexi Box</h1>
+            <p>Now build your custom FLEXI BOX with ANY 4 Bella Vita Organic Products of your choice! Forget the hassle of restricting your options and go crazy to pick anything you like. Build yourself a box that completes your entire beauty regime.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <div class="box2">
+        <div>
+            <h1>Ultimate Perfume Box</h1>
+            <p>A unique box for all. Take advantage of Bella Vita Organic’s luxury perfume box by selecting a perfume from each category of perfumes for men, women and unisex fragrances. Enjoy the big savings and a versatile collection suitable for everyone.</p>
+            <button>Buy Now</button>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_7102807d-0070-44dd-8fc4-d9187349e724.jpg?v=1651702480" alt=""></div>
+
+    </div>
+    <!-- 2 -->
+    <div class="box">
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_2.jpg?v=1651671939" alt=""></div>
+        <div>
+            <h1>Complete Care Box</h1>
+            <p>Office meetings, parties, dates, wherever it is, go with natural payoff of pretty colour lush on your lips, cheeks, and eyelids every day, every time with your Colourlicious -MTV Box.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <div class="box2">
+        <div>
+            <h1>The Face Care Box</h1>
+            <p>Now build your custom FLEXI BOX with ANY 4 Bella Vita Organic Products of your choice! Forget the hassle of restricting your options and go crazy to pick anything you like. Build yourself a box that completes your entire beauty regime.</p>
+            <button>Buy Now</button>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_4416f4f8-0daa-4128-b1d0-af522381988e.jpg?v=1651702588" alt=""></div>
+
+    </div>
+    <!-- 3 -->
+    <div class="box">
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_8.jpg?v=1651671939" alt=""></div>
+        <div>
+            <h1>The Summer Box</h1>
+            <p>Beat the heat with Bella Vita Organic's ultimate summer box. Buy a collection of 5 natural ayurveda products that are the perfect for your skin and body care during the hot months. Select from a variety of options and enjoy your savings.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <div class="box2">
+        <div>
+            <h1>The Essential Oil Box</h1>
+            <p>Purify, cleanse, calm, & intensify your surroundings with Pure Essential Oils by Bella Vita Organic. Bring home the goodness of natural plants & flowers that enhance your health, beauty, aura & chakras. Choose your favourites from a variety of oils and Build A Box that you love!</p>
+            <button>Buy Now</button>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_9.jpg?v=1651671939" alt=""></div>
+
+    </div>
+    <!-- last -->
+    <div class="box">
+        <div><img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/1200-799_3e6fac63-41f4-46e3-bceb-367a6dce3cc4.jpg?v=1651702458" alt=""></div>
+        <div>
+            <h1>Tinty Box</h1>
+            <p>Office meetings, parties, dates, wherever it is, go with natural payoff of pretty colour lush on your lips, cheeks, and eyelids every day, every time with your Colourlicious -MTV Box.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="footer1">
+          <div>
+           <h4>ONLINE PRESENCE</h4>
+           <hr>
+           <h5>Amazon</h5>
+           <h5>Nykaa</h5>
+           <h5>Flipkart</h5>
+           <h5>TataCLiq</h5>
+           <h5>Snapdeal</h5>
+          </div>
+          <div>
+            <h4>INFORMATION</h4>
+            <hr>
+            <h5>Blogs</h5>
+            <h5>Newsroom</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>Privacy Policy</h5>
+            <h5>Refund and Return</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Reward Policy</h5>
+           </div>
+           <div>
+            <h4>SUPPORT</h4>
+            <hr>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+            <h5>Order Tracking</h5>
+            <h5>All Products</h5>
+            <h5>FAQ</h5>
+           </div>
+           <div>
+            <h4>CONTACT US</h4>
+            <hr>
+            <h5> Office Location: Plot no. 417, Udyog Vihar Phase III, Gurgaon,Haryana ,India</h5>
+            <h5>shop@bellavitaorganic.com</h5>
+            <h5>+91 9311732440</h5>
+            <h5>Timing:9:00 AM To 9:00 PM , Monday To Sunday</h5>
+           </div>
+           <div>
+            <h4>OUR NEWS LETTER</h4>
+            <hr>
+            <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
+           <p>Plus, you'll be the first to know about our discounts!</p>
+           <input type="mail" placeholder="Enter your Email Address"><br>
+           <button>Sumbmit</button>
+           </div>
+        </div>
+        <div id="footer2">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/payments-stripe-footer_256x256_e_400x.png?v=1650369513" alt="">
+          </div>
+          <div id="socialicon">
+            <img src="https://img.icons8.com/fluency/2x/instagram-new.png" alt="" >
+            <img src="https://img.icons8.com/fluency/2x/facebook-new.png" alt="">
+            <img src="https://img.icons8.com/color/2x/twitter.png" alt="">
+            <img src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            <img src="https://img.icons8.com/office/2x/pinterest.png" alt="">
+          </div>
+          <div>
+            <p>© 2022, Bella Vita Organic</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
