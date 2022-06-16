@@ -10,6 +10,7 @@
   </head>
 
   <embed>
+    <!-- -------------------HEADER PART------------------ -->
     <a  href="https://chat.whatsapp.com/DXPebvfGUwH0QQNd8foVfn" target="_blank"><img id="whatsapp" src="https://cdn.shopify.com/s/files/1/0054/6665/2718/t/336/assets/whatsapp.svg?v=107532592768653809461655125466" alt="image"></a>
     <header>
       <div id="Discount">
@@ -98,6 +99,7 @@
         <hr />
       </div>
     </header>
+    <!-- ------------------------MAINBODY--------------------- -->
     <mainbody>
       <div class="slider">
         <div class="images">
@@ -128,12 +130,13 @@
         </div>
       </div>
     </mainbody>
+    <!-- -----------MAKE CHOICE IMG------------------- -->
     <div id="OrganicImg">
       <img
         src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/13th_may_banner-2_1500x.jpg?v=1655194810"
         alt="2ndDivImg"/>
     </div>
-    
+    <!-- ----------------BEST SELLER--------------- -->
     <div id="bestseller">
     <div id="bestseller1">
       
@@ -144,6 +147,7 @@
       </div>
     </div>
     <div id="bestseller2">
+      <!-- -----------IN THE SPOTLIGHT------------- -->
     <h2 id="spotlight">IN THE SPOTLIGHT</h2>
   </div>
     <div id="spotlight">
@@ -213,11 +217,11 @@
         </div>
         
     </div>
+    <!-- -------------FIND SOLUTIONS FOR-------------- -->
     <div>
       <div id="bestseller3">
         <h2 id="sol">FIND SOLUTIONS FOR</h2>
       </div>
-      
         <div id="solutions">
       
 
@@ -284,7 +288,6 @@
           </div>
           
       </div>
-
     </div>
     <div id="trustUs">
         <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Desktop_Brand_Comms_Banner_V2.1_1500x.png?v=1651661695" alt="Trust Us">
@@ -442,8 +445,8 @@
           <hr>
           <p>Sign up here to get the latest news, updates and special offers delivered to your inbox.</p><br>
          <p>Plus, you'll be the first to know about our discounts!</p>
-         <input type="mail" placeholder="Enter your Email Address"><br>
-         <button>Sumbmit</button>
+         <input type="mail" placeholder="Enter your Email Address" id="mailbox"><br>
+         <button id="button">Submit</button>
          </div>
         
       </div>
@@ -465,18 +468,6 @@
     </footer>
   </body>
    <script>
-    // window.onscroll = function(){
-    //     scrollfunction()
-    // };
-    // function scrollfunction(){
-    //     if(document.body.scrollTop>50 || document.documentElement.scrollTop>50){
-    //             document.getElementById("scroll-div").style.display="flex";
-    //     }
-        
-        
-    // }
-   
-    
     let bestSellers = [
             {
                 hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-02_533x.jpg?v=1655010286",
@@ -528,7 +519,7 @@
                 document.querySelector("#product").innerHTML = ""
                 bestSellersData.forEach(function (el){
                     let div1 = document.createElement("div")
-                    /* Hover */
+                   
                     div1.addEventListener("mouseover", function(){
                         mouseon(el)
                     })
@@ -542,7 +533,7 @@
                     function mouseoff(el){
                         img.src = el.imageUrl
                     }
-                    /* Hover */
+                  
                     
                     let img = document.createElement("img")
                     img.src = el.imageUrl
@@ -564,7 +555,7 @@
                          localStorage.setItem("desciption",JSON.stringify(el))
                          window.location.href = "skin-description/s-12.html"
                     })
-/* A */
+
                     let div2 = document.createElement("div")
                     div2.addEventListener("click", function(){
                          localStorage.setItem("desciption",JSON.stringify(el))
@@ -587,7 +578,7 @@
                     rating.innerText = el.rating
 
                     div2.append(rs,stackedPrice,rating)
-/* A */
+
                     let button = document.createElement("button")
                     button.innerText = "ADD TO CART"
                     button.addEventListener("click", function(){
@@ -626,7 +617,7 @@
                 filterit(document.querySelector("#featured").value,bestSellersData)
             })
 
-            /* filtred run program */
+
 
             function filterit(getvalue,bestSellersData){
                 if(getvalue=="Alpha"){
@@ -639,8 +630,7 @@
                     filterbyHL(bestSellersData)
                 }
             }
-            /* Sorting Functions */
-            /* Alphabatic */
+
             function filterbyAZ(bestSellersData){
                 let filter = bestSellersData.sort(function(a,b){
                     if(a.name>b.name) return 1
@@ -648,8 +638,7 @@
                     return 0
                 })
                 displaydata(filter)
-/*                 console.log(filter)
- */               
+              
             }
             function filterbyZA(bestSellersData){
                 let filter = bestSellersData.sort(function(a,b){
@@ -658,26 +647,21 @@
                     return 0
                 })
                 displaydata(filter)
-/*                 console.log(filter)
- */               
-            }
-            /* Price based */
+       }
+
             function filterbyLH(bestSellersData){
                 let filter = bestSellersData.sort(function(a,b){
                     return a.price - b.price
                 })
                 displaydata(filter)
-/*                 console.log(filter)
- */               
+            
             }
 
             function filterbyHL(bestSellersData){
                 let filter = bestSellersData.sort(function(a,b){
                     return b.price - a.price
                 })
-                displaydata(filter)
-/*                 console.log(filter)
- */               
+                displaydata(filter)               
             }
 
 
