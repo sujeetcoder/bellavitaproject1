@@ -825,9 +825,7 @@ function display3(elem){
     img.setAttribute("src",elem.imageUrl);
     let name = document.createElement("h5");
     name.innerText = elem.name
-    let a = document.createElement("a");
-    a.setAttribute("href",elem.anchor)
-    a.append(name)
+    
     let description = document.createElement("p");
     description.innerText = elem.description
     let prdiv = document.createElement("div");
@@ -842,7 +840,7 @@ function display3(elem){
     let cartButton = document.createElement("button");
     cartButton.innerText = "ADD TO CART";
     document.querySelector("#container3").append(div)
-    div.append(img,a,description,prdiv,cartButton)
+    div.append(img,name,description,prdiv,cartButton)
     prdiv.append(rupee,price,stackedprice,rating)
     cartButton.addEventListener("click",function(){
         if(check()){

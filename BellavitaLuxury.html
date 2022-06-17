@@ -550,9 +550,7 @@ function display1(elem){
     img.setAttribute("src",elem.imageUrl);
     let name = document.createElement("h5");
     name.innerText = elem.name
-    let a = document.createElement("a");
-    a.setAttribute("href",elem.anchor)
-    a.append(name)
+   
     let description = document.createElement("p");
     description.innerText = elem.description
     let prdiv = document.createElement("div");
@@ -567,7 +565,7 @@ function display1(elem){
     let cartButton = document.createElement("button");
     cartButton.innerText = "ADD TO CART";
     document.querySelector("#container").append(div)
-    div.append(img,a,description,prdiv,cartButton)
+    div.append(img,name,description,prdiv,cartButton)
     prdiv.append(rupee,price,stackedprice,rating)
     cartButton.addEventListener("click",function(){
         if(check()){
@@ -613,7 +611,7 @@ function display2(elem){
     image.addEventListener("click",perfume)
 
     function perfume(){
-        window.location.href = "ALLPERFUMES.html"
+        window.location.href = "ALL PERFUMES.html"
     }
 document.querySelector("#Perfumes").append(image)
 
