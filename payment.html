@@ -31,6 +31,17 @@
             border: 1.5px solid rgb(177, 176, 176);
             border-radius: 7px;
         }
+
+        form+button{
+            margin-top: 2%;
+            padding: 0.5em;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: antiquewhite;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +60,8 @@
         <input type="password" id="cvv" placeholder="CVV">
         <input type="submit">
     </form>
+
+    <button> CANCEL PROCESS</button>
 </body>
 <script>
     totalItem = localStorage.getItem("total");
@@ -77,6 +90,11 @@
                 }
             }
         })
+    }
+    document.querySelector("form+button").addEventListener("click",cancel)
+
+    function cancel(){
+        window.location.href = "cart.html"
     }
 </script>
 </html>

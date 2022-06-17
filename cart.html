@@ -19,7 +19,7 @@
     /* height: 100px; */
     
 }
-#Icons-div>img{
+#Icons-div>a>img{
     width: 50px;
    margin-right: 5px;
 }
@@ -189,6 +189,7 @@ hr{
    
         <div id="menu">
             <div id="Icons-div">
+              <a href="index.html">
                   <img
                     src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVO_220_x_220.png?v=1653304683"
                     alt="organic"
@@ -201,6 +202,7 @@ hr{
                     src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/BVL_220_x_220.png?v=1653304721"
                     alt="luxury"
                   />
+                </a>
             </div>
 <!-- ////////////////////////////////////////////// -->
         
@@ -397,5 +399,13 @@ hr{
     localStorage.setItem("totalA",totalA);
     localStorage.setItem("total",total)
     window.location.href="payment.html"
+  }
+
+  document.querySelector("#apply").addEventListener("click",apply);
+  function apply (){
+    if(document.querySelector("input").value == "MASAI30"){
+          totalA = totalA-(totalA*3/10)
+      }
+      document.querySelector("#total>h3+span").innerText =  totalA
   }
 </script>
