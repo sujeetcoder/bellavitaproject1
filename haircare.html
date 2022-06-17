@@ -356,16 +356,11 @@ header{
         </h3>
       </div>
       <header>
-        <div id="Discount">
-          <h3>
-            Father's Day Sale - Flat 50 % Off on Perfume*
-            <button>Shop Now</button>
-          </h3>
-        </div>
+        
         <div id="scroll-div">
           <div id="Icons-div">
             <div id="signup-icon">
-              <a href="#">
+              <a href="signUP.html">
               <img
                 src="https://static.thenounproject.com/png/4161545-200.png"
                 alt="Login Icon"
@@ -421,7 +416,7 @@ header{
             </div>
           </div>
           <div id="menu">
-            <a href="#" target="_self"><p>SHOP ALL</p></a>
+            <a href="shopAll.html" target="_self"><p>SHOP ALL</p></a>
             <P>|</P>
             <a href="newarrivals.html" target="_self"><p>NEW ARRIVALS</p></a>
             <P>|</P>
@@ -433,7 +428,7 @@ header{
             <P>|</P>
             <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
             <P>|</P>
-            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <a href="ALL PERFUMES" target="_self"><p>PERFUMES</p></a>
             <P>|</P>
             <a href="combo.html" target="_self"><p>COMBOS</p></a>
             <P>|</P>
@@ -464,7 +459,7 @@ header{
     <!-- Main part -->
     <div id="main">
         <div id="sidebar">
-            <div>Shop All</div>
+            <div><a href="shopAll.html">Shop All</a></div>
             <div><a href="newarrivals.html"><u>New Arrival</u></a></div>
             <div><a href="bestsellers.html">Bestsellers</a></div>
             <div>
@@ -581,6 +576,7 @@ let bestSellersData = [
                 description: "Anti Frizz, Anti Hairfall & Nourishing",
                 price: 549,
                 stackedPrice: "₹ 599",
+                productID: "H-01",
                 rating: "4.9 ★"
             },
             {
@@ -590,6 +586,7 @@ let bestSellersData = [
                 description: "Anti-Frizz, Hairfall Control & Volumizing",
                 price: 299,
                 stackedPrice: "₹ 349",
+                productID: "H-02",
                 rating: "4.8 ★"
             },
             {  
@@ -599,6 +596,7 @@ let bestSellersData = [
                 description: "Anti Frizz, Nourishing & Hair Strengthening",
                 price: 349,
                 stackedPrice: "₹ 399",
+                productID: "H-03",
                 rating: "4.7 ★"
             },
             {
@@ -608,6 +606,7 @@ let bestSellersData = [
                 description: "Anti Frizz, Hairfall Control & Anti Dandruff",
                 price:  275,
                 stackedPrice: "₹ 299",
+                productID: "H-04",
                 rating: "4.8 ★"
             },
             {
@@ -617,6 +616,7 @@ let bestSellersData = [
                 description: "Anti-Frizz, Hairfall Control & Anti-Dandruff",
                 price:  375,
                 stackedPrice: "₹ 399",
+                productID: "H-05",
                 rating: "4.7 ★"
             },
             {
@@ -626,6 +626,7 @@ let bestSellersData = [
                 description: "Growth Protein Shampoo, Growth Protein Conditioner",
                 price: 598,
                 stackedPrice: "₹ 748",
+                productID: "H-06",
                 rating: "4.9 ★"
             },
             {
@@ -635,6 +636,7 @@ let bestSellersData = [
                 description: "Growth Protein Shampoo, Growth Protein Conditioner, Growth Protein Hair Oil",
                 price: 837,
                 stackedPrice: "₹ 1,047",
+                productID: "H-07",
                 rating: "4.8 ★"
             },
             {
@@ -644,6 +646,7 @@ let bestSellersData = [
                 description: "",
                 price:450,
                 stackedPrice: "",
+                productID: "H-08",
                 rating: "4. ★"
             },
             {
@@ -653,6 +656,7 @@ let bestSellersData = [
                 description: "Nourished The Scalp, Boosts Growth, Anti-Dandruff",
                 price: 199,
                 stackedPrice: "",
+                productID: "H-09",
                 rating: "4.7 ★"
             },
             {
@@ -662,6 +666,7 @@ let bestSellersData = [
                 description: "Eau De Parfum",
                 price: 199,
                 stackedPrice: "",
+                productID: "H-10",
                 rating: "5.0 ★"
             },
     ]
@@ -762,7 +767,7 @@ let bestSellersData = [
 
             function checkfun(cartData,el){
               let x = cartData.filter(function(elem){
-                    return elem.name == el.name
+                    return elem.productID == el.productID
                 })
                 if(x.length>0){
                     return true;
