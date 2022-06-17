@@ -90,7 +90,7 @@
           <P>|</P>
           <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
           <P>|</P>
-          <a href="ALLPERFUMES.html" target="_self"><p>PERFUMES</p></a>
+          <a href="ALL PERFUMES.html" target="_self"><p>PERFUMES</p></a>
           <P>|</P>
           <a href="combo.html" target="_self"><p>COMBOS</p></a>
           <P>|</P>
@@ -468,14 +468,15 @@
     </footer>
   </body>
    <script>
-    let bestSellers = [
-            {
+    let bestSellersData = [
+    {
                 hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-02_533x.jpg?v=1655010286",
                 imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286",
                 name: "EXFOLIATE FACE AND BODY SCRUB GRIT 75GM",
                 description: "Gentle Exfoliation, Nourishing & Skin Brightening",
                 price: 193,
                 stackedPrice: "₹ 275",
+                productID: "B-01",
                 rating: "4.7 ★"
             },
             {
@@ -485,6 +486,7 @@
                 description: "Repairs Dark Circles, Puffy Eyes & Wrinkles",
                 price: 228,
                 stackedPrice: "₹ 325",
+                productID: "B-02",
                 rating: "5 ★"
             },
             {
@@ -494,6 +496,7 @@
                 description: "De-Tan & Brightening",
                 price: 174,
                 stackedPrice: "₹ 249",
+                productID: "B-03",
                 rating: "4.7 ★"
             },
             {
@@ -503,13 +506,14 @@
                 description: "Pimple Scar Removal & Skin Clarifying",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "B-04",
                 rating: "4.8 ★"
             },
     ]
-    localStorage.setItem("bestSellersData", JSON.stringify(bestSellers))
+    /* localStorage.setItem("bestSellersData", JSON.stringify(bestSellers)) */
     let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
-    let bestSellersData = JSON.parse(localStorage.getItem("bestSellersData")) || []
+    /* let bestSellersData = JSON.parse(localStorage.getItem("bestSellersData")) || [] */
             displaydata(bestSellersData)
 
             let unit = bestSellersData.length
