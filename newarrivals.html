@@ -345,7 +345,7 @@ header{
         <div id="scroll-div">
           <div id="Icons-div">
             <div id="signup-icon">
-              <a href="#">
+              <a href="signUP.html">
               <img
                 src="https://static.thenounproject.com/png/4161545-200.png"
                 alt="Login Icon"
@@ -413,7 +413,7 @@ header{
             <P>|</P>
             <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
             <P>|</P>
-            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <a href="ALL PERFUMES" target="_self"><p>PERFUMES</p></a>
             <P>|</P>
             <a href="combo.html" target="_self"><p>COMBOS</p></a>
             <P>|</P>
@@ -553,7 +553,7 @@ header{
 
 <script>
 /* SK */
-    let newArrivals = [
+    let newarrivalsData = [
             {
                 hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HydraplusFaceWash-02.jpg?v=1654164895",
                 imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/HydraplusFaceWash-03_700x.jpg?v=1654164895",
@@ -561,6 +561,7 @@ header{
                 description: "Hydrating, Cleansing & Brightening",
                 price: 195,
                 stackedPrice: "₹ 297",
+                productID: "N-01",
                 rating: "4.7 ★"
             },
             {
@@ -570,6 +571,7 @@ header{
                 description: "Pore Cleansing, Radiating & Skin Rejuvenating",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "N-02",
                 rating: "5 ★"
             },
             {
@@ -579,6 +581,7 @@ header{
                 description: "Brightening & Anti Pigmentation",
                 price: 263,
                 stackedPrice: "₹ 375",
+                productID: "N-03",
                 rating: "4.8 ★"
             },
             {
@@ -588,6 +591,7 @@ header{
                 description: "Hydrating & Moisturising",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "N-04",
                 rating: "4.7 ★"
             },
             {
@@ -597,6 +601,7 @@ header{
                 description: "Skin Brightening, Repair And Dryness",
                 price: 384,
                 stackedPrice: "₹ 549",
+                productID: "N-05",
                 rating: "4.7 ★"
             },
             {
@@ -606,6 +611,7 @@ header{
                 description: "Hydrating, Repairing And Nourishing",
                 price: 314,
                 stackedPrice: "₹ 449",
+                productID: "N-06",
                 rating: "4.8 ★"
             },
             {
@@ -615,6 +621,7 @@ header{
                 description: "Anti Frizz, Anti Hairtall & Nourishing",
                 price: 549,
                 stackedPrice: "₹ 599",
+                productID: "N-07",
                 rating: "5 ★"
             },
             {
@@ -624,6 +631,7 @@ header{
                 description: "Skin Brightening & Hydrating Oil For Youthtul Skin",
                 price: 419,
                 stackedPrice: "₹ 599",
+                productID: "N-08",
                 rating: "4.7 ★"
             },
             {
@@ -633,6 +641,7 @@ header{
                 description: "Brightening & Anti Pigmentation",
                 price: 263,
                 stackedPrice: "₹ 375",
+                productID: "N-09",
                 rating: "4.8 ★"
             },
             {
@@ -642,6 +651,7 @@ header{
                 description: "Hydrates & Nourishes",
                 price: 174,
                 stackedPrice: "₹ 249",
+                productID: "N-10",
                 rating: "5 ★"
             },
             {
@@ -651,6 +661,7 @@ header{
                 description: "Skin Brightening & Anti Blemish",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "N-11",
                 rating: "5 ★"
             },
             {
@@ -660,14 +671,15 @@ header{
                 description: "Hydrating, Repairing And Nourishing",
                 price: 149,
                 stackedPrice: "₹ 299",
+                productID: "N-12",
                 rating: "4.8 ★"
             }
     ]
 
-    localStorage.setItem("newarrivalsData", JSON.stringify(newArrivals))
+    // localStorage.setItem("newarrivalsData", JSON.stringify(newArrivals))
     let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
-    let newarrivalsData = JSON.parse(localStorage.getItem("newarrivalsData")) || []
+    // let newarrivalsData = JSON.parse(localStorage.getItem("newarrivalsData")) || []
             displaydata(newarrivalsData)
 
             let unit = newarrivalsData.length
@@ -760,7 +772,7 @@ header{
 
             function checkfun(cartData,el){
               let x = cartData.filter(function(elem){
-                    return elem.name == el.name
+                    return elem.productID == el.productID
                 })
                 if(x.length>0){
                     return true;

@@ -361,7 +361,7 @@ header{
         <div id="scroll-div">
           <div id="Icons-div">
             <div id="signup-icon">
-              <a href="#">
+              <a href="signUP.html">
               <img
                 src="https://static.thenounproject.com/png/4161545-200.png"
                 alt="Login Icon"
@@ -429,7 +429,7 @@ header{
             <P>|</P>
             <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
             <P>|</P>
-            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <a href="ALL PERFUMES" target="_self"><p>PERFUMES</p></a>
             <P>|</P>
             <a href="combo.html" target="_self"><p>COMBOS</p></a>
             <P>|</P>
@@ -569,7 +569,7 @@ header{
 
 <script>
 /* SK */
-let bestSellers = [
+let bestSellersData = [
             {
                 hoverUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-02_533x.jpg?v=1655010286",
                 imageUrl: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Exfoliate-01_1_700x.jpg?v=1655010286",
@@ -577,6 +577,7 @@ let bestSellers = [
                 description: "Gentle Exfoliation, Nourishing & Skin Brightening",
                 price: 193,
                 stackedPrice: "₹ 275",
+                productID: "B-01",
                 rating: "4.7 ★"
             },
             {
@@ -586,6 +587,7 @@ let bestSellers = [
                 description: "Repairs Dark Circles, Puffy Eyes & Wrinkles",
                 price: 228,
                 stackedPrice: "₹ 325",
+                productID: "B-02",
                 rating: "5 ★"
             },
             {
@@ -595,6 +597,7 @@ let bestSellers = [
                 description: "De-Tan & Brightening",
                 price: 174,
                 stackedPrice: "₹ 249",
+                productID: "B-03",
                 rating: "4.7 ★"
             },
             {
@@ -604,6 +607,7 @@ let bestSellers = [
                 description: "Pimple Scar Removal & Skin Clarifying",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "B-04",
                 rating: "4.8 ★"
             },
             {
@@ -613,6 +617,7 @@ let bestSellers = [
                 description: "Eau De Parfum",
                 price: 424,
                 stackedPrice: "₹ 849",
+                productID: "B-05",
                 rating: "5 ★"
             },
             {
@@ -622,6 +627,7 @@ let bestSellers = [
                 description: "Skin Brightening & Hydrating Oil For Youthtul Skin",
                 price: 419,
                 stackedPrice: "₹ 599",
+                productID: "B-06",
                 rating: "4.7 ★"
             },
             {
@@ -631,6 +637,7 @@ let bestSellers = [
                 description: "Deep Cleansing, Hydrating & Skin Reviving",
                 price: 279,
                 stackedPrice: "₹ 399",
+                productID: "B-07",
                 rating: "4.8 ★"
             },
             {
@@ -640,6 +647,7 @@ let bestSellers = [
                 description: "Deep Cleansing, Hydrating & Skin Reviving",
                 price: 424,
                 stackedPrice: "₹ 849",
+                productID: "B-08",
                 rating: "5 ★"
             },
             {
@@ -649,6 +657,7 @@ let bestSellers = [
                 description: "Eau De Parfum",
                 price: 424,
                 stackedPrice: "₹ 849",
+                productID: "B-09",
                 rating: "4.7 ★"
             },
             {
@@ -658,6 +667,7 @@ let bestSellers = [
                 description: "Eau De Parfum",
                 price: 449,
                 stackedPrice: "₹ 899",
+                productID: "B-10",
                 rating: "4.7 ★"
             },
             {
@@ -667,6 +677,7 @@ let bestSellers = [
                 description: "Eau De Parfum",
                 price: 449,
                 stackedPrice: "₹ 899",
+                productID: "B-11",
                 rating: "5 ★"
             },
             {
@@ -676,14 +687,15 @@ let bestSellers = [
                 description: "Refreshing, Hydrating & Skin Brightening",
                 price: 174,
                 stackedPrice: "₹ 249",
+                productID: "B-12",
                 rating: "4.8 ★"
             }
     ]
 
-    localStorage.setItem("bestSellersData", JSON.stringify(bestSellers))
+    /* localStorage.setItem("bestSellersData", JSON.stringify(bestSellers)) */
     let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
-    let bestSellersData = JSON.parse(localStorage.getItem("bestSellersData")) || []
+   /*  let bestSellersData = JSON.parse(localStorage.getItem("bestSellersData")) || [] */
             displaydata(bestSellersData)
 
             let unit = bestSellersData.length
@@ -776,7 +788,7 @@ let bestSellers = [
 
             function checkfun(cartData,el){
               let x = cartData.filter(function(elem){
-                    return elem.name == el.name
+                    return elem.productID == el.productID
                 })
                 if(x.length>0){
                     return true;

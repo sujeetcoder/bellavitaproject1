@@ -345,7 +345,7 @@ header{
         <div id="scroll-div">
           <div id="Icons-div">
             <div id="signup-icon">
-              <a href="#">
+              <a href="signUP.html">
               <img
                 src="https://static.thenounproject.com/png/4161545-200.png"
                 alt="Login Icon"
@@ -413,7 +413,7 @@ header{
             <P>|</P>
             <a href="bodycare.html" target="_self"><p>BODY CARE</p></a>
             <P>|</P>
-            <a href="#" target="_self"><p>PERFUMES</p></a>
+            <a href="ALL PERFUMES" target="_self"><p>PERFUMES</p></a>
             <P>|</P>
             <a href="combo.html" target="_self"><p>COMBOS</p></a>
             <P>|</P>
@@ -561,6 +561,7 @@ header{
                 description: "C-Glow Face Wash & Exfoliate Face & Body Scrub",
                 price: 524,
                 stackedPrice: "",
+                productID: "C-01",
                 rating: "4.7 ★"
             },
             {
@@ -570,6 +571,7 @@ header{
                 description: "Hydrates, Nourishes, Replenishes, Rejuvenates",
                 price: 929,
                 stackedPrice: "₹ 1,547",
+                productID: "C-02",
                 rating: "4.6 ★"
             },
             {
@@ -579,6 +581,7 @@ header{
                 description: "Roll On Deo - Men (Pack Of 2)",
                 price: 318,
                 stackedPrice: "₹ 398",
+                productID: "C-03",
                 rating: "4.8 ★"
             },
             {
@@ -588,6 +591,7 @@ header{
                 description: "Roll On Deo - Men & Women",
                 price: 318,
                 stackedPrice: "₹ 398",
+                productID: "C-04",
                 rating: "4.7 ★"
             },
             {
@@ -597,6 +601,7 @@ header{
                 description: "Growth Protein Shampoo, Growth Protein Conditioner",
                 price:  598,
                 stackedPrice: "₹ 748",
+                productID: "C-05",
                 rating: "4.9 ★"
             },
             {
@@ -606,6 +611,7 @@ header{
                 description: "Nicolips & The Lip Balm",
                 price:  540,
                 stackedPrice: "₹ 675",
+                productID: "C-06",
                 rating: "4.7 ★"
             },
             {
@@ -615,6 +621,7 @@ header{
                 description: "Roll On Deo - Women (Pack Of 2)",
                 price:  318,
                 stackedPrice: "₹ 398",
+                productID: "C-07",
                 rating: "4.6 ★"
             },
             {
@@ -624,6 +631,7 @@ header{
                 description: "Deep Cleans, Nourishes, Hydrates, Radiance ",
                 price: 948,
                 stackedPrice: "",
+                productID: "C-08",
                 rating: "4.7 ★"
             },
             {
@@ -633,6 +641,7 @@ header{
                 description: "C-Glow Face Wash, C-Glow Toner & C-Glow Face Gel",
                 price: 627,
                 stackedPrice: "₹ 897",
+                productID: "C-09",
                 rating: "4.7 ★"
             },
             {
@@ -642,6 +651,7 @@ header{
                 description: "C-Glow Face Wash, C-Glow Face Cream & C-Glow Face Serum",
                 price:  799,
                 stackedPrice: "₹ 999",
+                productID: "C-10",
                 rating: "4.7 ★"
             },
             {
@@ -651,6 +661,7 @@ header{
                 description: "C-Glow Face Wash & C-Glow Face Cream",
                 price: 499,
                 stackedPrice: "₹ 24",
+                productID: "C-11",
                 rating: "4.7 ★"
             },
             {
@@ -660,6 +671,7 @@ header{
                 description: "C-Glow Face Wash, C-Glow Face Gel & C-Glow Face Cream",
                 price: 818,
                 stackedPrice: "₹ 1,023",
+                productID: "C-12",
                 rating: "4.7 ★"
             }
     ]
@@ -759,7 +771,7 @@ header{
 
             function checkfun(cartData,el){
               let x = cartData.filter(function(elem){
-                    return elem.name == el.name
+                    return elem.productID == el.productID
                 })
                 if(x.length>0){
                     return true;
